@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/takamin/Desktop/NewAITRescue/src/AmbulanceTeam/Device'
+let g:netrw_dirhist_2='/home/takamin/Desktop/NewAITRescue/src/PoliceForce'
+let g:netrw_dirhist_3='/home/takamin/.vim/bundle/caw.vim'
+let g:netrw_dirhist_4='/home/takamin/.vim_snippets'
