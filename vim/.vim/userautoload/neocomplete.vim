@@ -13,7 +13,7 @@ if has('lua') && (v:version > 703 || (v:version == 703 && has('patch885')))
 	let g:neocomplete#min_syntax_length = 3
 	let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 	" Use auto select
-	let g:neocomplete#enable_auto_select = 1
+	"let g:neocomplete#enable_auto_select = 1
 
 	" Define dictionary.
 	let g:neocomplete#dictionary_filetype_lists = {
