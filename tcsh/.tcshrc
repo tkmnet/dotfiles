@@ -1,0 +1,32 @@
+limit coredumpsize 0 
+set prompt="%T %n@%m %c%# "
+set autolist=ambiguous
+set complete=1
+set showdots
+set color
+set filec
+set autocorrect
+set history=1000
+set savehist=(1000 merge)
+set histdup=erase
+set ignoreeof
+set listjobs
+set notify
+set rmstar
+limit coredumpsize 0
+
+bindkey -k up history-search-backward
+bindkey -k down history-search-forward
+
+setenv EDITOR vim
+
+alias ls ls -F --color
+alias l ls -F --color
+alias la ls -AF --color
+alias ll ls -lAF --color
+
+alias vi vim
+
+complete cd 'p/1/d/'
+complete {which,where,sudo,strace,exec,trace} 'p/1/c/'
+complete apt-cache 'p/1/(search)/'
