@@ -20,8 +20,10 @@ bindkey -k down history-search-forward
 
 setenv EDITOR vim
 
-alias ls ls -F --color
+alias :q exit 
 alias l ls -F --color
+
+alias ls ls -F --color
 alias la ls -AF --color
 alias ll ls -lAF --color
 

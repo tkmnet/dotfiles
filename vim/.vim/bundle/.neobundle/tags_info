@@ -1,12 +1,11 @@
 SrcExpl
 caw.vim
+echodoc
 neocomplcache.vim
 neocomplete.vim
-neomru.vim
 neosnippet
 neosnippet-snippets
 nerdtree
 tagbar
-unite.vim
 vim-fugitive
 vim-indent-guides
