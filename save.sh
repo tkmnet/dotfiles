@@ -1,5 +1,7 @@
 #! /bin/sh
 
+cd `dirname $0`
+
 cp ~/.vimrc ./vim/
 cp -r ~/.vim/ ./vim/
 
