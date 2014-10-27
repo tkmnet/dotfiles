@@ -5,7 +5,7 @@ cd `dirname $0`
 git pull
 
 DFDIR=`pwd`
-echo $DFDIR/test
+
 
 ln -sf $DFDIR/vim/.vimrc ~/.vimrc
 mkdir ~/.vim_temp 2>/dev/null
