@@ -10,10 +10,8 @@ cd `dirname $RL_TARGET_FILE`
 RL_FILENAME=`basename $RL_TARGET_FILE`
 RL_TARGET_FILE=`readlink $RL_FILENAME`
 done
-echo $RL_FILENAME
- 
-LOGDIR=`pwd -P`/$RL_FILENAME
-echo $LOGDIR
+DFDIR=`pwd -P`/$RL_FILENAME
+echo $DFDIR
 
 ln -sf ./vim/.vimrc ~/.vimrc
 mkdir ~/.vim_temp 2>/dev/null
