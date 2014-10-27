@@ -4,6 +4,7 @@ cd `dirname $0`
 
 git pull
 
+
 ln -sf ./vim/.vimrc ~/
 mkdir ~/.vim_temp 2>/dev/null
 ln -sf ./vim/.vimrc ~/
@@ -19,3 +20,8 @@ ln -sf ./vim/.vim/bundle/neobundle.vim/ ~/.vim/bundle/
 ln -sf ./tcsh/.tcshrc ~/
 ln -sf ./tcsh/.login ~/
 ln -sf ./tcsh/.logout ~/
+
+
+git add ./
+git commit -am "Save"
+git push
