@@ -14,6 +14,6 @@ ln -sf ./vim/.vimrc ~/
 mkdir ~/.vim/bundle 2>/dev/null
 ln -sf ./vim/.vim/bundle/neobundle.vim ~/.vim/bundle/
 
-ln -se ./tcsh/.tcshrc ~/
-ln -se ./tcsh/.login ~/
-ln -se ./tcsh/.logout ~/
+ln -sf ./tcsh/.tcshrc ~/
+ln -sf ./tcsh/.login ~/
+ln -sf ./tcsh/.logout ~/
