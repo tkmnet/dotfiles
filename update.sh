@@ -4,7 +4,7 @@ cd `dirname $0`
 
 git pull
 
-DFDIR=`dirname $0`
+DFDIR=`dirname pwd`
 echo $DFDIR/test
 
 ln -sf ./vim/.vimrc ~/.vimrc
