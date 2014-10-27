@@ -16,7 +16,6 @@ mkdir ~/.vim/colors 2>/dev/null
 ln -sf $DFDIR/vim/.vim/colors/* ~/.vim/
 mkdir ~/.vim/snippets 2>/dev/null
 ln -sf $DFDIR/vim/.vim/snippets/* ~/.vim/
-rm -rf ~/.vim/bundle/neobundle.vim 2>/dev/null
 mkdir ~/.vim/bundle/neobundle.vim 2>/dev/null
 ln -sf $DFDIR/vim/.vim/bundle/neobundle.vim/* ~/.vim/bundle/neobundle.vim/
 
