@@ -19,9 +19,9 @@ ln -sf $DFDIR/vim/.vim/snippets/* ~/.vim/
 mkdir ~/.vim/bundle/neobundle.vim 2>/dev/null
 ln -sf $DFDIR/vim/.vim/bundle/neobundle.vim/* ~/.vim/bundle/neobundle.vim/
 
-ln -sf ./tcsh/.tcshrc ~/
-ln -sf ./tcsh/.login ~/
-ln -sf ./tcsh/.logout ~/
+ln -sf $DFDIR/tcsh/.tcshrc ~/
+ln -sf $DFDIR/tcsh/.login ~/
+ln -sf $DFDIR/tcsh/.logout ~/
 
 
 git add ./
