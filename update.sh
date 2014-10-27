@@ -25,5 +25,5 @@ ln -sf $DFDIR/tcsh/.logout ~/
 
 
 git add ./
-git commit -am "Save" 1>/dev/null
+git commit -am "Save" >/dev/null
 git push
