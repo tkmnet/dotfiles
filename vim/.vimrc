@@ -9,6 +9,7 @@ set listchars=eol:¬,tab:▸\
 set cursorline
 set ruler
 syntax on
+set cmdheight=2
 
 set autoread
 set backupdir=$HOME/.vim_temp
