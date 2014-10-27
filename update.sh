@@ -11,7 +11,7 @@ RL_FILENAME=`basename $RL_TARGET_FILE`
 RL_TARGET_FILE=`readlink $RL_FILENAME`
 done
 DFDIR=`pwd -P`/$RL_FILENAME
-echo $DFDIR
+echo $DFDIR/test
 
 ln -sf ./vim/.vimrc ~/.vimrc
 mkdir ~/.vim_temp 2>/dev/null
