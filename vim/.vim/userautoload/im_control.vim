@@ -1,7 +1,10 @@
 NeoBundle "fuenor/im_control.vim"
 
+set runtimepath+=~/.vim/bundle/im_control
+
 let IM_CtrlMode = 1
-inoremap <silent> <C-j> <C-r>=IMState('FixMode')<CR>
+inoremap <silent> <C-k>=IMState('FixMode')<CR>
+
 
 " IBus 1.5(after)
 function! IMCtrl(cmd)
