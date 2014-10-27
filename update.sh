@@ -5,7 +5,7 @@ cd `dirname $0`
 git pull
 
 
-ln -sf ./vim/.vimrc ~/
+ln -sf ./vim/.vimrc ~/.vimrc
 mkdir ~/.vim_temp 2>/dev/null
 ln -sf ./vim/.vimrc ~/
 mkdir ~/.vim/userautoload 2>/dev/null
