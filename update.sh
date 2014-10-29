@@ -26,3 +26,6 @@ ln -sf $DFDIR/tcsh/.logout ~/
 git add ./
 git commit -am "Save" >/dev/null
 git push
+
+
+vi -s vim/install.vim
