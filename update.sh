@@ -8,6 +8,7 @@ DFDIR=`pwd`
 
 
 ln -sf $DFDIR/vim/.vimrc ~/.vimrc
+mkdir ~/.vim 2>/dev/null
 mkdir ~/.vim_temp 2>/dev/null
 ln -sf $DFDIR/vim/.vimrc ~/
 mkdir ~/.vim/userautoload 2>/dev/null
