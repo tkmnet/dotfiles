@@ -11,14 +11,10 @@ ln -sf $DFDIR/vim/.vimrc ~/.vimrc
 mkdir ~/.vim 2>/dev/null
 mkdir ~/.vim_temp 2>/dev/null
 ln -sf $DFDIR/vim/.vimrc ~/
-mkdir ~/.vim/userautoload 2>/dev/null
-ln -sf $DFDIR/vim/.vim/userautoload/* ~/.vim/
-mkdir ~/.vim/colors 2>/dev/null
-ln -sf $DFDIR/vim/.vim/colors/* ~/.vim/
-mkdir ~/.vim/snippets 2>/dev/null
-ln -sf $DFDIR/vim/.vim/snippets/* ~/.vim/
-mkdir ~/.vim/bundle/neobundle.vim 2>/dev/null
-ln -sf $DFDIR/vim/.vim/bundle/neobundle.vim ~/.vim/bundle/neobundle.vim
+ln -sdf $DFDIR/vim/.vim/userautoload ~/.vim/
+ln -sdf $DFDIR/vim/.vim/colors ~/.vim/
+ln -sdf $DFDIR/vim/.vim/snippets ~/.vim/
+ln -sdf $DFDIR/vim/.vim/bundle/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 ln -sf $DFDIR/tcsh/.tcshrc ~/
 ln -sf $DFDIR/tcsh/.login ~/
