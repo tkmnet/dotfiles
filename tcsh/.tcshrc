@@ -21,11 +21,11 @@ bindkey -k down history-search-forward
 setenv EDITOR vim
 
 alias :q exit 
-alias l ls -F --color
+alias l ls -F
 
-alias ls ls -F --color
-alias la ls -AF --color
-alias ll ls -lAF --color
+alias ls ls -F
+alias la ls -AF
+alias ll ls -lAF
 
 alias vi vim
 
