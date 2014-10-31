@@ -2,8 +2,10 @@
 
 cd `dirname $0`
 
-git pull
-git submodule update
+if [ -f ./.superflag ]; then
+	git pull
+	git submodule update
+fi
 
 DFDIR=`pwd`
 
