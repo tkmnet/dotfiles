@@ -3,7 +3,7 @@
 cd `dirname $0`
 
 if [ ! -e ./.superflag ]; then
-	git reset --hard
+	git reset --hard > /dev/null
 fi
 
 git pull > /dev/null
