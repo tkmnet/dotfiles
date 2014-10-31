@@ -8,10 +8,10 @@ fi
 
 git pull > /dev/null
 
-GIT_VER_CMD='git log -1 | head -1 | tr -d "\n"'
 if [ $# -ne 0 ]; then
+	GIT_VER=`git log -1 | head -1 | tr -d "\n"`
 	LOCAL_VER=`cat ./.local-version | tr -d "\n"`
-	if [ $1 = "-l" -a  "`$GIT_VER_CMD`" = "$LOCAL_VER" ]; then
+	if [ $1 = "-l" -a  "$GIT_VER" = "$LOCAL_VER" ]; then
 		exit
 	fi
 fi
@@ -47,7 +47,8 @@ if [ -e ./.superflag ]; then
 	git push 2> /dev/null
 fi
 
-echo -n `$GIT_VER_CMD` > ./.local-version
+GIT_VER=`git log -1 | head -1 | tr -d "\n"`
+echo -n $GIT_VER > ./.local-version
 
 
 vim -s vim/install.vim
