@@ -5,7 +5,6 @@ cd `dirname $0`
 if [ ! -e ./.superflag ]; then
 	git reset --hard > /dev/null
 fi
-
 git pull > /dev/null
 git submodule update --init > /dev/null
 
