@@ -37,4 +37,4 @@ complete apt-cache 'p/1/(search)/'
 
 
 
-~/dotfiles/update.sh -l
+~/dotfiles/update.sh -l &
