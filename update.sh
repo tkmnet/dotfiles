@@ -5,6 +5,9 @@ cd `dirname $0`
 if [ -e ./.superflag ]; then
 	git pull
 	git submodule update
+else
+	git reset --hard
+	git pull
 fi
 
 DFDIR=`pwd`
@@ -25,9 +28,11 @@ ln -sf $DFDIR/tcsh/.login ~/
 ln -sf $DFDIR/tcsh/.logout ~/
 
 
-git add ./
-git commit -am "Save" >/dev/null
-git push
+if [ -e ./.superflag ]; then
+	git add ./
+	git commit -am "Save" >/dev/null
+	git push
+fi
 
 
 vi -s vim/install.vim
