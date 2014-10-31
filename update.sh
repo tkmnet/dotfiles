@@ -14,7 +14,7 @@ if [ $# -ne 0 ]; then
 		exit
 	fi
 fi
-echo -n GIT_VER > ./.local-version
+echo -n $GIT_VER > ./.local-version
 
 git submodule update --init > /dev/null
 
