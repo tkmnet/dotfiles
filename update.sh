@@ -10,7 +10,7 @@ git pull > /dev/null
 
 if [ $# -ne 0 ]; then
 	GIT_VER=`git log -1 | head -1 | tr -d "\n"`
-	LOCAL_VER=`cat ./.local-version | tr -d "\n"`
+	LOCAL_VER=`cat ./.local-version 2> /dev/null | tr -d "\n"`
 	if [ $1 = "-l" -a  "$GIT_VER" = "$LOCAL_VER" ]; then
 		exit
 	fi
