@@ -12,7 +12,7 @@ fi
 
 DFDIR=`pwd`
 
-mkdir /tmp/test_takamin_dotfile
+mkdir /tmp/test_takamin_dotfile 2> /dev/null
 LN_DIR_FLAG=`ln -sdf /tmp/test_takamin_dotfile /tmp/test_takamin_dotfile_ln  2> /dev/null&& echo -n "-d" || echo -n ""`
 rm -rf /tmp/test_takamin_dotfile
 rm -rf /tmp/test_takamin_dotfile_ln
