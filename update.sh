@@ -35,7 +35,7 @@ ln -sf $DFDIR/tcsh/.logout ~/
 if [ -e ./.superflag ]; then
 	git add ./
 	git commit -am "Save" >/dev/null
-	git push > /dev/null
+	git push 2> /dev/null
 fi
 
 
