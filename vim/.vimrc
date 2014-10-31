@@ -5,7 +5,9 @@ set number
 set laststatus=2
 set showmatch
 set list
-set listchars=eol:¬,tab:>\ 
+set listchars=eol:\ ,tab:>\ 
+highlight NonText term=underline ctermbg=white guibg=white
+highlight SpecialKey term=underline ctermfg=darkgray guifg=darkgray
 set cursorline
 set ruler
 syntax on
