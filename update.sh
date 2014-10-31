@@ -5,7 +5,17 @@ cd `dirname $0`
 if [ ! -e ./.superflag ]; then
 	git reset --hard > /dev/null
 fi
+
 git pull > /dev/null
+
+GIT_VER=`git log -1 | head -1 | tr -d "\n"`
+if [ $# -ne 0 ]; then
+	if [ $1 = "-l" -a  "$GIT_VER" = "`cat ./.local-version`" ]; then
+		exit
+	fi
+fi
+echo -n GIT_VER > ./.local-version
+
 git submodule update --init > /dev/null
 
 DFDIR=`pwd`
