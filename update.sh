@@ -6,8 +6,8 @@ if [ ! -e ./.superflag ]; then
 	git reset --hard
 fi
 
-git pull
-git submodule update --init
+git pull > /dev/null
+git submodule update --init > /dev/null
 
 DFDIR=`pwd`
 
@@ -35,7 +35,7 @@ ln -sf $DFDIR/tcsh/.logout ~/
 if [ -e ./.superflag ]; then
 	git add ./
 	git commit -am "Save" >/dev/null
-	git push
+	git push > /dev/null
 fi
 
 
