@@ -70,3 +70,8 @@ NeoBundleCheck
 
 set runtimepath+=~/.vim/
 runtime! userautoload/*.vim
+
+
+if filereadable(glob('./.vimrc.local'))
+    so ./.vimrc.local
+endif
