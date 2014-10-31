@@ -40,4 +40,4 @@ if [ -e ./.superflag ]; then
 fi
 
 
-vi -s vim/install.vim
+vim -s vim/install.vim
