@@ -2,7 +2,7 @@
 
 cd `dirname $0`
 
-if [ -f ./.superflag ]; then
+if [ -e ./.superflag ]; then
 	git pull
 	git submodule update
 fi
