@@ -4,4 +4,5 @@ call neobundle#config('echodoc', {
 			\ 'autoload' : {
 			\ 'insert' : 1,
 			\ }})
+set noshowmode
 let g:echodoc_enable_at_startup = 1
