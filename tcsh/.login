@@ -1,2 +1,1 @@
-eval `ssh-agent`
-~/dotfiles/update.sh
+eval `ssh-agent` >& /dev/null
