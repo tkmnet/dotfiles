@@ -21,11 +21,13 @@ bindkey -k down history-search-forward
 setenv EDITOR vim
 
 alias :q exit 
-alias l ls -F
 
-alias ls ls -F
-alias la ls -AF
-alias ll ls -lAF
+setenv COLOR_FLAG `ls --color >& /dev/null && echo -n "--color" || echo -n "-G"`
+alias l ls -F $COLOR_FLAG
+alias ls ls -F $COLOR_FLAG
+alias la ls -AF $COLOR_FLAG
+alias ll ls -lAF $COLOR_FLAG
+unsetenv COLOR_FLAG
 
 alias vi vim
 
