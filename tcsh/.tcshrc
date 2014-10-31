@@ -22,7 +22,7 @@ setenv EDITOR vim
 
 alias vi vim
 alias l ls
-alias :q 'fg;exit'
+alias :q 'fg >& /dev/null ;exit'
 
 setenv COLOR_FLAG `ls --color >& /dev/null && echo -n "--color" || echo -n "-G"`
 alias ls ls -F $COLOR_FLAG
