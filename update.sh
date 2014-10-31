@@ -51,4 +51,4 @@ GIT_VER=`git log -1 | head -1 | tr -d "\n"`
 echo -n $GIT_VER > ./.local-version
 
 
-#vim -s vim/install.vim
+vim -s vim/install.vim
