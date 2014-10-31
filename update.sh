@@ -2,13 +2,12 @@
 
 cd `dirname $0`
 
-if [ -e ./.superflag ]; then
-	git pull
-	git submodule update
-else
+if [ ! -e ./.superflag ]; then
 	git reset --hard
-	git pull
 fi
+
+git pull
+git submodule update --init
 
 DFDIR=`pwd`
 
