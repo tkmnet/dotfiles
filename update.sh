@@ -12,16 +12,21 @@ fi
 
 DFDIR=`pwd`
 
+mkdir /tmp/test_takamin_dotfile
+LN_DIR_FLAG=`ln -sdf /tmp/test_takamin_dotfile /tmp/test_takamin_dotfile_ln  2> /dev/null&& echo -n "-d" || echo -n ""`
+rm -rf /tmp/test_takamin_dotfile
+rm -rf /tmp/test_takamin_dotfile_ln
+
 
 ln -sf $DFDIR/vim/.vimrc ~/.vimrc
 mkdir ~/.vim 2>/dev/null
 mkdir ~/.vim_temp 2>/dev/null
 ln -sf $DFDIR/vim/.vimrc ~/
-ln -sdf $DFDIR/vim/.vim/userautoload ~/.vim/
-ln -sdf $DFDIR/vim/.vim/colors ~/.vim/
-ln -sdf $DFDIR/vim/.vim/snippets ~/.vim/
+ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/userautoload ~/.vim/
+ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/colors ~/.vim/
+ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/snippets ~/.vim/
 mkdir ~/.vim/bundle 2>/dev/null
-ln -sdf $DFDIR/vim/.vim/bundle/neobundle.vim ~/.vim/bundle/
+ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/bundle/neobundle.vim ~/.vim/bundle/
 
 ln -sf $DFDIR/tcsh/.tcshrc ~/
 ln -sf $DFDIR/tcsh/.login ~/
