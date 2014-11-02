@@ -23,6 +23,7 @@ setenv EDITOR vim
 alias vi vim
 alias l ls
 alias :q 'fg >& /dev/null ;exit'
+alias cd.. cd ..
 
 setenv COLOR_FLAG `ls --color >& /dev/null && echo -n "--color" || echo -n "-G"`
 alias ls ls -F $COLOR_FLAG
@@ -33,7 +34,3 @@ unsetenv COLOR_FLAG
 complete cd 'p/1/d/'
 complete {which,where,sudo,strace,exec,trace} 'p/1/c/'
 complete apt-cache 'p/1/(search)/'
-
-
-
-~/dotfiles/update.sh -l &
