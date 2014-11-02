@@ -24,6 +24,7 @@ alias vi vim
 alias l ls
 alias :q 'fg >& /dev/null ;exit'
 alias cd.. cd ..
+alias vi.rcshrc vi ~/.tcshrc
 
 setenv COLOR_FLAG `ls --color >& /dev/null && echo -n "--color" || echo -n "-G"`
 alias ls ls -F $COLOR_FLAG
@@ -32,5 +33,8 @@ alias ll ls -lAF $COLOR_FLAG
 unsetenv COLOR_FLAG
 
 complete cd 'p/1/d/'
-complete {which,where,sudo,strace,exec,trace} 'p/1/c/'
 complete apt-cache 'p/1/(search)/'
+complete git 'p/1/(pull push add commit status log)/' \
+	'n/commit/(-am)/'
+complete {which,where,sudo,strace,exec,trace} 'p/1/c/' \
+	'n/apt-get/(update upgrade install)/'

@@ -5,7 +5,7 @@ set number
 set laststatus=2
 set showmatch
 set list
-set listchars=eol:\|,tab:>\ 
+set listchars=eol:¬,tab:≫\ 
 set cursorline
 set ruler
 syntax on
