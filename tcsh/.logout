@@ -1,2 +1,5 @@
-ssh-agent -k
+setenv USER `who`
+if( `w -h $USER | wc -l` <= 2  )
+	ssh-agent -k
+endif
 clear
