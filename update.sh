@@ -1,5 +1,8 @@
 #! /bin/sh
 
+git version >& /dev/null || exit
+vim --version >& /dev/null || exit
+
 cd `dirname $0`
 
 if [ ! -e ./.superflag ]; then
