@@ -1,7 +1,7 @@
 #! /bin/sh
 
-git version >& /dev/null || exit
-vim --version >& /dev/null || exit
+git version 2> /dev/null > /dev/null || exit
+vim --version 2> /dev/null > /dev/null || exit
 
 cd `dirname $0`
 

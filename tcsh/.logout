@@ -1,8 +1,6 @@
-setenv USER `who`
-
 if( `w -h $USER | wc -l` <= 2  ) then
 	ssh-agent -k
-	rm -f ~/.ssh/agent.tmp >& /dev/null
+	rm -f ~/.ssh/agent.$HOST.tmp >& /dev/null
 endif
 
 clear
