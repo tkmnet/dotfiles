@@ -3,4 +3,11 @@ if( `w -h $USER | wc -l` <= 2  ) then
 	rm -f ~/.ssh/agent.$HOST.tmp >& /dev/null
 endif
 
+if( -d ~/tmp ) then
+	cd ~/tmp
+	find ~/tmp -maxdepth 1 -mmin +120 -type d | sed '/^.\/$/d' | xargs rm -rf
+	find ~/tmp -maxdepth 1 -mmin +120 -type f | xargs rm -f
+	find ~/tmp -maxdepth 1 -mmin +120 -type l | xargs rm -f
+endif
+
 clear
