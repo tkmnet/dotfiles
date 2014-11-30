@@ -19,12 +19,13 @@ bindkey -k down history-search-forward
 
 setenv EDITOR vim
 setenv LANG en_US.UTF-8
+setenv PATH ~/bin:$PATH
 
 alias vi vim
 alias l ls
 alias :q 'fg >& /dev/null ;exit'
 alias cd.. cd ..
-alias vi.rcshrc vi ~/.tcshrc
+alias vi.tcshrc vi ~/.tcshrc
 
 setenv COLOR_FLAG `ls --color >& /dev/null && echo -n "--color" || echo -n "-G"`
 alias ls ls -F $COLOR_FLAG
