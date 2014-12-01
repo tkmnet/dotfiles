@@ -1,3 +1,11 @@
+if ($?USERNAME) then                                                    
+if ($USERNAME == "root") then
+echo "Permission denied"
+kill -9 $$¬
+exit
+endif
+endif
+
 set prompt="%T %n@%m %c%# "
 set autolist=ambiguous
 set complete=1
