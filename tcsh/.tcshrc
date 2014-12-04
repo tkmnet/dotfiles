@@ -29,7 +29,6 @@ setenv EDITOR vim
 setenv LANG en_US.UTF-8
 setenv PATH ~/bin:$PATH
 
-alias vi vim
 alias l ls
 alias :q 'fg >& /dev/null ;exit'
 alias cd.. cd ..
