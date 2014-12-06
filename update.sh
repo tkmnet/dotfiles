@@ -43,6 +43,7 @@ ln -sf $DFDIR/tcsh/.tcshrc ~/
 ln -sf $DFDIR/tcsh/.login ~/
 ln -sf $DFDIR/tcsh/.logout ~/
 
+ln -sf $DFDIR/screen/.screenrc ~/
 
 if [ -e ./.superflag ]; then
 	git add ./
