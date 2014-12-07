@@ -8,3 +8,4 @@ hi Pmenu ctermbg=White ctermfg=DarkBlue
 hi PmenuSel ctermbg=DarkBlue ctermfg=White
 hi PmenuSbar ctermbg=White
 hi PmenuThumb ctermbg=DarkBlue
+hi Visual ctermbg=White ctermfg=Black
