@@ -45,4 +45,6 @@ complete apt-cache 'p/1/(search)/'
 complete git 'p/1/(pull push add commit status log)/' \
 	'n/commit/(-am)/'
 complete {which,where,sudo,strace,exec,trace} 'p/1/c/' \
-	'n/apt-get/(update upgrade install)/'
+	'n/apt-get/(update upgrade install remove purge autoremove)/' \
+	'n/aptitude/(update upgrade install remove purge search)/' \
+	'n/apt-cache/(search)/'

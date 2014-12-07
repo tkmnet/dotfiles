@@ -4,6 +4,6 @@ defencoding utf8
 encoding utf8 utf8
 defscrollback 10000
 startup_message off
-escape  ^z^z
-hardstatus alwayslastline '%{= Kw}%H%{= wW} %L=%{wk}%-w%46>%{gW}%n %t%{wk}%+w%-15=%{= Kw} %01d%M%y %02c'
+escape  ^b^b
+hardstatus alwayslastline '%{= Kw}%H%{= wW} %L=%{wk}%-w%46>%{gW}%n %t%{wk}%+w%-15=%{= Kw} %01d%M%y %02c%{=kW}'
 

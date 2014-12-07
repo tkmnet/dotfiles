@@ -44,6 +44,7 @@ ln -sf $DFDIR/tcsh/.login ~/
 ln -sf $DFDIR/tcsh/.logout ~/
 
 ln -sf $DFDIR/screen/.screenrc ~/
+ln -sf $DFDIR/screen/.tmux.conf ~/
 
 if [ -e ./.superflag ]; then
 	git add ./
