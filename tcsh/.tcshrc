@@ -40,6 +40,10 @@ alias la ls -AF $COLOR_FLAG
 alias ll ls -lAF $COLOR_FLAG
 unsetenv COLOR_FLAG
 
+if ($?TMUX) then
+	alias :q 'tmux detach'
+endif
+
 complete cd 'p/1/d/'
 complete apt-cache 'p/1/(search)/'
 complete git 'p/1/(pull push add commit status log)/' \
