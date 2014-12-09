@@ -1,4 +1,6 @@
 language en_US.UTF-8
+set encoding=utf-8
+
 
 set nocompatible
 set number
