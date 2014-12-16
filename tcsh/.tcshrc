@@ -40,6 +40,8 @@ alias la ls -AF $COLOR_FLAG
 alias ll ls -lAF $COLOR_FLAG
 unsetenv COLOR_FLAG
 
+alias tm tmux a || tmux
+
 if ($?TMUX) then
 	alias :q 'tmux detach'
 endif
