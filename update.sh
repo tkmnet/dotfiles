@@ -38,6 +38,9 @@ ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/colors ~/.vim/
 ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/snippets ~/.vim/
 mkdir ~/.vim/bundle 2>/dev/null
 ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/bundle/neobundle.vim ~/.vim/bundle/
+mkdir ~/.vim/after 2>/dev/null
+mkdir ~/.vim/after/syntax 2>/dev/null
+ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/after/syntax/tex.vim ~/.vim/after/syntax/
 
 ln -sf $DFDIR/tcsh/.tcshrc ~/
 ln -sf $DFDIR/tcsh/.login ~/
