@@ -1,4 +1,4 @@
-NeoBundle "git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex"
+NeoBundle "vim-latex/vim-latex.git"
 filetype plugin on
 let tex_flavor = 'latex'
 set grepprg=grep\ -nH\ $*
