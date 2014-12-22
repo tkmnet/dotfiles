@@ -46,6 +46,8 @@ set splitright
 let g:netrw_alto = 1
 let g:netrw_altv = 1
 
+set foldmethod=marker
+
 set tags+=tags;
 
 
