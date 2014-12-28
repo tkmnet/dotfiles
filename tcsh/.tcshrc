@@ -1,4 +1,4 @@
-if ($?USERNAME) then                                                    
+if ($?USERNAME) then
 	if ($USERNAME == "root") then
 		echo "Permission denied"
 		kill -9 $$¬
@@ -40,6 +40,7 @@ alias la ls -AF $COLOR_FLAG
 alias ll ls -lAF $COLOR_FLAG
 unsetenv COLOR_FLAG
 
+alias gv gvim
 alias tm tmux
 
 if ($?TMUX) then

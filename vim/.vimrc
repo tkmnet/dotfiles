@@ -19,8 +19,6 @@ set backupdir=$HOME/.vim_temp
 set directory=$HOME/.vim_temp
 set backup
 
-set clipboard=unnamed
-
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,]
 set scrolloff=8
@@ -47,6 +45,8 @@ let g:netrw_alto = 1
 let g:netrw_altv = 1
 
 set foldmethod=marker
+
+set clipboard=unnamed
 
 set tags+=tags;
 
