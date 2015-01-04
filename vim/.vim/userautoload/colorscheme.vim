@@ -1,5 +1,5 @@
 colorscheme jellybeans
-hi Normal ctermbg=Gray ctermfg=White guibg=Gray guifg=White
+hi Normal ctermbg=DarkGray ctermfg=White guibg=DarkGray guifg=White
 hi LineNr ctermbg=Black ctermfg=White guibg=Black guifg=White
 hi CursorLineNr ctermbg=Gray ctermfg=Black guibg=Gray guifg=Black
 hi ModeMsg ctermbg=Brown ctermfg=Black guibg=Brown guifg=Black
