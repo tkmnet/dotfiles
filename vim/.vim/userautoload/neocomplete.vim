@@ -15,6 +15,8 @@ if has('lua') && (v:version > 703 || (v:version == 703 && has('patch885')))
 	" Use auto select
 	"let g:neocomplete#enable_auto_select = 1
 
+	let g:neocomplete#skipinputtime = "0.3"
+
 	" Define dictionary.
 	let g:neocomplete#dictionary_filetype_lists = {
 			\ 'default' : ''
@@ -44,4 +46,4 @@ if has('lua') && (v:version > 703 || (v:version == 703 && has('patch885')))
 	 "\<TAB>"
 	 smap <C-k> <Plug>(neocomplete#snippets_expand)
 
-endif
+ endif

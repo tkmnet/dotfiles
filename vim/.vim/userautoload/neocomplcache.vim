@@ -13,6 +13,8 @@ if !(has('lua') && (v:version > 703 || (v:version == 703 && has('patch885'))))
 	let g:neocomplcache_min_syntax_length = 3
 	let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
+	let g:NeoComplCache_SkipInputTime = "0.2"
+
 	" Define dictionary.
 	let g:neocomplcache_dictionary_filetype_lists = {
 			\ 'default' : ''
