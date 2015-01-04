@@ -1,7 +1,5 @@
 colorscheme jellybeans
 
-set background=dark
-
 hi LineNr ctermbg=Black ctermfg=White guibg=Black guifg=White
 hi CursorLineNr ctermbg=Gray ctermfg=Black guibg=Gray guifg=Black
 hi ModeMsg ctermbg=Brown ctermfg=Black guibg=Brown guifg=Black
