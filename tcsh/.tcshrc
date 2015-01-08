@@ -42,6 +42,7 @@ unsetenv COLOR_FLAG
 
 alias gv gvim
 alias tm tmux
+alias ssh ssh -X
 
 if ($?TMUX) then
 	alias :q 'tmux detach'
