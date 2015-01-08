@@ -1,4 +1,4 @@
-if( `ps ax | grep ssh-agent | wc -l` <= 1  ) then
+if( `ps ax | grep ssh-agent | sed -e '/grep\|launch/d' | wc -l` <= 0  ) then
 	eval `ssh-agent > ~/.ssh/agent.$HOST.tmp` >& /dev/null
 	source ~/.ssh/agent.$HOST.tmp >& /dev/null
 	ssh-add
