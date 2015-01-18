@@ -49,6 +49,11 @@ ln -sf $DFDIR/tcsh/.logout ~/
 ln -sf $DFDIR/screen/.screenrc ~/
 ln -sf $DFDIR/screen/.tmux.conf ~/
 
+mkdir ~/.config 2>/dev/null
+ln -sf $DFDIR/awesome ~/.config/awesome
+ln -sf $DFDIR/fcitx ~/.config/fcitx
+
+
 if [ -e ./.superflag ]; then
 	git add ./
 	git commit -am "Save" >/dev/null
