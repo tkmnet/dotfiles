@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 
-if [ -x `which wget||echo @` ]; then
+if [ -x `which wget||echo /dev/null` ]; then
 	zsh
 	exit
 fi
