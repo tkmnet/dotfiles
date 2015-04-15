@@ -11,8 +11,7 @@ SAVEHIST=10000
 bindkey -e
 
 # Prompt
-PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
-%# "
+PROMPT="%%T {${fg[green]}%}[%n@%m]%{${reset_color}%} %c%# "
 
 # autocomp
 zstyle :compinstall filename '/home/takamin/.zshrc'
