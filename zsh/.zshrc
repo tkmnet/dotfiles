@@ -1,12 +1,31 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/takamin/.zshrc'
+# Color
+autoload -Uz colors
+colors
 
+# History
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+
+# Keybind
+bindkey -e
+
+# Prompt
+PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
+%# "
+
+# autocomp
+zstyle :compinstall filename '/home/takamin/.zshrc'
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
+
+# beep
+setopt no_beep
+setopt interactive_comments
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt hist_ignore_all_dups
+setopt share_history
+setopt hist_ignore_space
+setopt hist_reduce_blanks
