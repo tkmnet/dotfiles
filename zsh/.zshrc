@@ -70,13 +70,13 @@ alias :q='fg >& /dev/null ;exit'
 alias cd..=cd ..
 
 COLOR_FLAG=`ls --color >& /dev/null && echo -n "--color" || echo -n "-G"`
-alias ls=ls -F $COLOR_FLAG
-alias la=ls -AF $COLOR_FLAG
-alias ll=ls -lAF $COLOR_FLAG
+alias ls="ls -F $COLOR_FLAG"
+alias la="ls -AF $COLOR_FLAG"
+alias ll="ls -lAF $COLOR_FLAG"
 
-alias gv=gvim
-alias tm=tmux
-alias ssh=ssh -X
+alias gv='gvim'
+alias tm='tmux'
+alias ssh='ssh -X'
 
 #if ($?TMUX) then
 #	alias :q 'tmux detach'
