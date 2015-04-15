@@ -7,22 +7,25 @@ export PATH=~/bin:$PATH
 autoload -Uz colors
 colors
 
+# Keybind
+bindkey -e
+
 # History
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
+setopt hist_ignore_all_dups
+setopt share_history
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt hist_expand
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
-setopt hist_ignore_all_dups
-setopt share_history
-setopt hist_ignore_space
-setopt hist_reduce_blanks
-
-# Keybind
-bindkey -e
+bindkey "^[[5~" history-beginning-search-backward-end
+bindkey "^[[6~" history-beginning-search-forward-end
 
 # Prompt
 PROMPT="%T %{${fg[green]}%}%n@%m%{${reset_color}%} %c> "
