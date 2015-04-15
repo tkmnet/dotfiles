@@ -11,13 +11,13 @@ colors
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
 setopt hist_ignore_all_dups
 setopt share_history
 setopt hist_ignore_space
 setopt hist_reduce_blanks
-autoload history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
 
 # Keybind
 bindkey -e
