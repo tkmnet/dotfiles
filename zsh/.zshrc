@@ -52,6 +52,18 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 cdpath=(~)
 
+# Clipboard
+if which pbcopy >/dev/null 2>&1 ; then 
+    # Mac  
+    alias -g C='| pbcopy'
+elif which xsel >/dev/null 2>&1 ; then 
+    # Linux
+    alias -g C='| xsel --input --clipboard'
+elif which putclip >/dev/null 2>&1 ; then 
+    # Cygwin 
+    alias -g C='| putclip'
+fi
+
 # Alias
 alias l=ls
 alias :q='fg >& /dev/null ;exit'
