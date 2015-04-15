@@ -43,6 +43,7 @@ mkdir ~/.vim/after/syntax 2>/dev/null
 ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/after/syntax/tex.vim ~/.vim/after/syntax/
 
 ln -sf $DFDIR/bash/.bashrc ~/
+ln -sf $DFDIR/zsh/.zshrc ~/
 
 ln -sf $DFDIR/tcsh/.tcshrc ~/
 ln -sf $DFDIR/tcsh/.login ~/
