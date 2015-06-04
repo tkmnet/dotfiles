@@ -78,6 +78,10 @@ alias gv='gvim'
 alias tm='tmux'
 alias ssh='ssh -X'
 
+if [ -x `which vim||echo /dev/null` ]; then
+	alias vi="vim"
+fi
+
 #if ($?TMUX) then
 #	alias :q 'tmux detach'
 #endif
