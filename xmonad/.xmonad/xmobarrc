@@ -1,0 +1,40 @@
+Config { font = "xft:Ricty-12:regular"
+       , bgColor = "#1a1e1b"
+       , fgColor = "#979797"
+       , position = Top
+       , lowerOnStart = False
+       , commands = [ Run Wireless "wlp1s0" [ "-t"       , "<essid>"
+                                          ] 10
+                    , Run Cpu             [ "-t"       , "<total>%"
+                                          , "-p"       , "3"
+                                          , "-L"       , "40"
+                                          , "-H"       , "85"
+                                          , "--normal" , "#d3d7cf"
+                                          , "--high"   , "#c16666"
+                                          ] 10
+                    , Run Memory          [ "-t"       , "<usedratio>%"
+                                          , "-p"       , "3"
+                                          , "-L"       , "40"
+                                          , "-H"       , "90"
+                                          , "--normal" , "#d3d7cf"
+                                          , "--high"   , "#c16666"
+                                          ] 10
+                    , Run BatteryP        ["BAT0"]
+                                          [ "-t"       , "<acstatus><left>%"
+                                          , "-p"       , "3"
+                                          , "-L"       , "20"
+                                          , "-H"       , "80"
+                                          , "--low"    , "#c16666"
+                                          , "--normal" , "#d3d7cf"
+                                          , "--"
+                                                , "-O" , ">"
+                                                , "-o" , " "
+                                                , "-i" , "+"
+                                          ] 50
+                    , Run Date "%y%m%d-%H%M" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader% }{W[%wlp1s0wi%] C[%cpu%] M[%memory%] B[%battery%] <fc=orange>%date%</fc> "
+       }
