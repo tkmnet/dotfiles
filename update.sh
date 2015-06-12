@@ -52,8 +52,8 @@ ln -sf $DFDIR/tcsh/.logout ~/
 ln -sf $DFDIR/screen/.screenrc ~/
 ln -sf $DFDIR/screen/.tmux.conf ~/
 
-mkdir ~/.config 2>/dev/null
-ln -sf $DFDIR/fcitx ~/.config/fcitx
+mkdir -p ~/.config 2>/dev/null
+ln -sf $LN_DIR_FLAG $DFDIR/fcitx ~/.config/fcitx
 
 
 if [ -e ./.superflag ]; then
