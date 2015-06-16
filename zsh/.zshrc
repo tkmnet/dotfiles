@@ -66,7 +66,7 @@ fi
 
 # Alias
 alias l=ls
-alias :q='fg >& /dev/null ;exit'
+alias :q='fg > /dev/null 2>&1 ;exit'
 alias cd..=cd ..
 
 COLOR_FLAG=`ls --color >& /dev/null && echo -n "--color" || echo -n "-G"`
@@ -77,11 +77,25 @@ alias ll="ls -lAF $COLOR_FLAG"
 alias gv='gvim'
 alias tm='tmux'
 alias ssh='ssh -X'
+alias po='sudo poweroff'
 
 if [ -x `which vim||echo /dev/null` ]; then
 	alias vi="vim"
 fi
 
-#if ($?TMUX) then
-#	alias :q 'tmux detach'
-#endif
+if [ `ps ax | grep ssh-agent | sed -e '/grep\|launch/d' | wc -l` -eq 0 ]; then
+	eval `ssh-agent > ~/.ssh/agent.$HOST.tmp` > /dev/null 2>&1
+	source ~/.ssh/agent.$HOST.tmp > /dev/null 2>&1
+	ssh-add
+
+	~/dotfiles/update.sh -l &
+
+else
+	source ~/.ssh/agent.$HOST.tmp > /dev/null 2>&1
+fi
+
+
+if [ -n "${TMUX}" ];then
+	unalias :q
+	alias :q 'tmux detach'
+fi
