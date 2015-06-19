@@ -20,21 +20,22 @@ Config { font = "xft:Ricty-12:regular"
                                           , "--high"   , "#c16666"
                                           ] 10
                     , Run BatteryP        ["BAT0"]
-                                          [ "-t"       , "<acstatus><left>%"
+                                          [ "-t"       , "<acstatus>"
                                           , "-p"       , "3"
                                           , "-L"       , "20"
                                           , "-H"       , "80"
                                           , "--low"    , "#c16666"
                                           , "--normal" , "#d3d7cf"
                                           , "--"
-                                                , "-O" , ">"
-                                                , "-o" , " "
-                                                , "-i" , "+"
+                                                , "-O" , "><left>%|<timeleft>"
+                                                , "-o" , " <left>%|<timeleft>"
+                                                , "-i" , "+<left>%|-:--"
+                                                , "-f" , "ADP0/online"
                                           ] 50
-                    , Run Date "%y%m%d-%H%M" "date" 10
+                    , Run Date "%H:%M・%y%m%d" "date" 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %StdinReader% }{W[%wlp1s0wi%] C[%cpu%] M[%memory%] B[%battery%] <fc=orange>%date%</fc> "
+       , template = " %StdinReader% }{W[%wlp1s0wi%] C[%cpu%] M[%memory%] B[%battery%] <fc=#ff6600>%date%</fc> "
        }

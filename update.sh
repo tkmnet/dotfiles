@@ -55,6 +55,8 @@ ln -sf $DFDIR/screen/.tmux.conf ~/
 mkdir -p ~/.config 2>/dev/null
 ln -sf $LN_DIR_FLAG $DFDIR/fcitx ~/.config/fcitx
 
+ln -sf $LN_DIR_FLAG $DFDIR/xmonad/.xmonad ~/.xmonad
+
 
 if [ -e ./.superflag ]; then
 	git add ./

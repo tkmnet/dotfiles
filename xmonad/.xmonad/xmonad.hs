@@ -41,6 +41,7 @@ modm = mod4Mask
 
 colorBlue      = "#857da9"
 colorBlue2     = "#1e90ff"
+colorOrange    = "#ff6600"
 colorGreen     = "#88b986"
 colorGray      = "#676767"
 colorWhite     = "#d3d7cf"
@@ -68,7 +69,7 @@ main = do
        { borderWidth = 2
        , terminal = "xfce4-terminal"
        , normalBorderColor = colorGray
-       , focusedBorderColor = colorBlue2
+       , focusedBorderColor = colorOrange
        , startupHook = myStartupHook
        , manageHook = placeHook myPlacement <+> myManageHookShift <+> myManageHookFloat <+> manageDocks
         -- any time Full mode, avoid xmobar area
@@ -119,8 +120,14 @@ main = do
        --, ((0                       , 0x1008FF03), spawn "xbacklight - 10")
 
        , ((modm                    , xK_w ), spawn "chromium")
+       , ((modm                    , xK_s ), spawn "midori --plain 'http://www.google.co.jp/'")
        , ((modm                    , xK_f ), spawn "pcmanfm")
-       , ((modm                    , xK_F5 ), spawn "gksudo wpa_gui")
+       , ((modm                    , xK_F9 ), spawn "gksudo rbl")
+       , ((modm                    , xK_F11 ), spawn "gksudo sbl")
+       , ((modm                    , xK_F12 ), spawn "gksudo mbl")
+       , ((modm                    , xK_F5 ), spawn "gksudo wpa_cli enable_network all")
+       , ((modm .|. shiftMask      , xK_F5 ), spawn "gksudo wpa_gui")
+       , ((modm                    , xK_o ), spawn "systemctl suspend")
        , ((0                       , xK_Menu ), spawn "xfrun4 -q;xfrun4 -r")
        ]
 
@@ -137,6 +144,7 @@ myStartupHook = do
         spawn "xscreensaver -no-splash"
         spawn "fcitx -rd"
         spawn "synclient MaxTapTime=0"
+        spawn "nitrogen --restore&"
 --        spawn "nm-applet"
 --        spawn "feh --bg-fill /media/ssh0/STOCK/Pictures/wallpapers/Abstract-gauss.jpg"
 --        spawn "compton --config /home/ssh0/.config/compton/compton.conf -b"
@@ -167,12 +175,12 @@ myLogHook h = dynamicLogWithPP $ wsPP { ppOutput = hPutStrLn h }
 myWsBar = "xmobar ~/.xmonad/xmobarrc"
 
 wsPP = xmobarPP { ppOrder               = \(ws:l:t:_)   -> [ws,t]
-                , ppCurrent             = xmobarColor   colorBlue2       colorNormalbg
+                , ppCurrent             = xmobarColor   colorOrange      colorNormalbg
                 , ppUrgent              = xmobarColor   colorWhite       colorNormalbg
                 , ppVisible             = xmobarColor   colorWhite       colorNormalbg
                 , ppHidden              = xmobarColor   colorWhite       colorNormalbg
                 , ppHiddenNoWindows     = xmobarColor   colorGray        colorNormalbg
-                , ppTitle               = xmobarColor   colorBlue2       colorNormalbg
+                , ppTitle               = xmobarColor   colorOrange      colorNormalbg
                 , ppWsSep               = " "
                 , ppSep                 = " :: "
                 }
