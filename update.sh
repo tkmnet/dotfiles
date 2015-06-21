@@ -53,9 +53,9 @@ ln -sf $DFDIR/screen/.screenrc ~/
 ln -sf $DFDIR/screen/.tmux.conf ~/
 
 mkdir -p ~/.config 2>/dev/null
-ln -sf $LN_DIR_FLAG $DFDIR/fcitx ~/.config/fcitx
+ln -sf $LN_DIR_FLAG $DFDIR/fcitx ~/.config/
 
-ln -sf $LN_DIR_FLAG $DFDIR/xmonad/.xmonad ~/.xmonad
+#ln -sf $LN_DIR_FLAG $DFDIR/xmonad/.xmonad ~/
 
 
 if [ -e ./.superflag ]; then
