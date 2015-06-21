@@ -1,2 +1,8 @@
 .superflag
 .local-version
+
+fcitx/dbus/
+fcitx/log/
+fcitx/clipboard/
+xmonad/
+
