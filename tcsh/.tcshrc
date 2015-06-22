@@ -59,3 +59,5 @@ complete {which,where,sudo,strace,exec,trace} 'p/1/c/' \
 	'n/apt-get/(update upgrade install remove purge autoremove)/' \
 	'n/aptitude/(update upgrade install remove purge search)/' \
 	'n/apt-cache/(search)/'
+
+complete build 'p/1/`build -l|sed -e "s%\n% %"`/'
