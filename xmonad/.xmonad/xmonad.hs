@@ -185,5 +185,6 @@ wsPP = xmobarPP { ppOrder               = \(ws:l:t:_)   -> [ws,t]
                 , ppSep                 = " :: "
                 }
 
+
 myPlacement = fixed (0.5, 0.5)
 
