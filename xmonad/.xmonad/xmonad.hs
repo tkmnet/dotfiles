@@ -132,9 +132,12 @@ main = do
        ]
 
 -- Handle Window behaveior
-myLayout = (spacing 5 $ ResizableTall 1 (3/100) (3/5) [])
-            |||  (spacing 2 $ (dragPane Horizontal (1/10) (1/2)))
-            |||  (dragPane Vertical   (1/10) (1/2))
+myLayout = (spacing 5 $ (ResizableTall 1 (3/100) (3/5) []))
+	    |||  (spacing 5 $ (Mirror $ (ResizableTall 1 (3/100) (3/5) [])))
+            |||  (spacing 5 $ (dragPane Horizontal (1/10) (1/2)))
+            |||  (spacing 5 $ (dragPane Vertical   (1/10) (1/2)))
+	    |||  (spacing 5 $ (Full))
+
 
 
 -- Start up (at xmonad beggining), like "wallpaper" or so on
