@@ -77,7 +77,7 @@ alias ll="ls -lAF $COLOR_FLAG"
 alias gv='gvim'
 alias tm='tmux'
 alias ssh='ssh -X'
-alias po='sudo poweroff'
+alias po='sudo shutdown -h 0'
 
 if [ -x `which vim||echo /dev/null` ]; then
 	alias vi="vim"

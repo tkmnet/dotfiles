@@ -1,6 +1,6 @@
 Config { font = "xft:Ricty-12:regular"
-       , bgColor = "#1a1e1b"
-       , fgColor = "#979797"
+       , bgColor = "#000000"
+       , fgColor = "#FFFFFF"
        , position = Top
        , lowerOnStart = False
        , commands = [ Run Wireless "wlp1s0" [ "-t"       , "<essid>"
