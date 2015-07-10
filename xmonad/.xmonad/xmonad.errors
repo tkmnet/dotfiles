@@ -3,3 +3,7 @@ xmonad.hs:8:1: Warning:
     Module ‘System.Cmd’ is deprecated: Use "System.Process" instead
 
 xmonad.hs:86:1: Warning: Tab character
+
+xmonad.hs:136:1: Warning: Tab character
+
+xmonad.hs:139:1: Warning: Tab character
