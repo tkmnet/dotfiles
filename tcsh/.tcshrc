@@ -27,7 +27,7 @@ bindkey ^[[6~ history-search-forward
 
 setenv EDITOR vim
 setenv LANG en_US.UTF-8
-setenv PATH ~/bin:$PATH
+setenv PATH "~/bin:$PATH"
 
 alias l ls
 alias :q 'fg >& /dev/null ;exit'
