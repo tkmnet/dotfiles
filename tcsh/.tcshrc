@@ -64,3 +64,6 @@ complete {which,where,sudo,strace,exec,trace} 'p/1/c/' \
 	'n/apt-cache/(search)/'
 
 complete build 'p/1/`build -l|sed -e "s%\n% %"`/'
+
+
+echo Hello! Shunki
