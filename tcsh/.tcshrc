@@ -66,4 +66,4 @@ complete {which,where,sudo,strace,exec,trace} 'p/1/c/' \
 complete build 'p/1/`build -l|sed -e "s%\n% %"`/'
 
 
-echo Hello! Shunki
+echo Hello! Shunki 1>&2
