@@ -7,7 +7,5 @@ let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
 let g:Tex_ViewRule_dvi = 'evince'
 let g:Tex_ViewRule_pdf = 'evince'
 
-:TTarget pdf
-
 au BufNewFile,BufRead *.tex,*.latex,*.sty,*.dtx,*.ltx,*.bbl setf tex
 let g:tex_flavor='latex'
