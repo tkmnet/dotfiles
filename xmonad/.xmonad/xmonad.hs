@@ -42,6 +42,8 @@ modm = mod4Mask
 colorBlue      = "#857da9"
 colorBlue2     = "#1e90ff"
 colorOrange    = "#ff6600"
+colorYellow    = "#ffc700"
+colorRed       = "#ff2a00"
 colorGreen     = "#88b986"
 colorGray      = "#676767"
 colorWhite     = "#d3d7cf"
@@ -179,8 +181,8 @@ myWsBar = "xmobar ~/.xmonad/xmobarrc"
 
 wsPP = xmobarPP { ppOrder               = \(ws:l:t:_)   -> [ws,t]
                 , ppCurrent             = xmobarColor   colorOrange      colorNormalbg
-                , ppUrgent              = xmobarColor   colorWhite       colorNormalbg
-                , ppVisible             = xmobarColor   colorWhite       colorNormalbg
+                , ppUrgent              = xmobarColor   colorRed         colorNormalbg
+                , ppVisible             = xmobarColor   colorYellow      colorNormalbg
                 , ppHidden              = xmobarColor   colorWhite       colorNormalbg
                 , ppHiddenNoWindows     = xmobarColor   colorGray        colorNormalbg
                 , ppTitle               = xmobarColor   colorOrange      colorNormalbg
