@@ -40,6 +40,8 @@ if has('lua') && (v:version > 703 || (v:version == 703 && has('patch885')))
 	inoremap <expr><C-y>  neocomplete#close_popup()
 	inoremap <expr><C-e>  neocomplete#cancel_popup()
 
+	inoremap <expr><CR>  pumvisible() ? neocomplete#close_popup() : "<CR>"
+
 	" for snippets
 	 imap <expr><C-k> neocomplete#sources#snippets_complete#expandable() ?
 	 "\<Plug>(neocomplete#snippets_expand)" : pumvisible() ? "\<C-n>" :
