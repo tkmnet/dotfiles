@@ -9,4 +9,5 @@ let g:Tex_ViewRule_dvi = 'evince'
 let g:Tex_ViewRule_pdf = 'evince'
 
 au BufNewFile,BufRead *.tex,*.latex,*.sty,*.dtx,*.ltx,*.bbl setf tex
+au BufNewFile,BufRead *.tex,*.latex,*.sty,*.dtx,*.ltx,*.bbl NeoCompleteLock
 let g:tex_flavor='latex'
