@@ -42,6 +42,7 @@ unsetenv COLOR_FLAG
 alias gv gvim
 alias tm tmux
 alias ssh ssh -X
+alias CB xsel --input --clipboard
 
 if ( -x `which vim||echo /dev/null` ) then
 	alias vi vim
@@ -55,8 +56,11 @@ setenv DOLLER '$'
 
 complete cd 'p/1/d/'
 complete apt-cache 'p/1/(search)/'
-complete git 'p/1/(pull push add commit status log)/' \
-	'n/commit/(-am)/'
+
+complete git 'p/1/(pull push add commit status log checkout branch reset)/' \
+	'n/commit/-am/' \
+	'n/reset/--hard/' 
+
 # complete {which,where,sudo,strace,exec,trace} "p/1/`echo $PATH | sed -E 's/:/\n/g' | xargs ls -F | grep -v / | sed -E 's/(@|\*)$DOLLER//g' | sed '/^$DOLLER/d' | sed -E 's/\n/ /g'`/" \
 complete {which,where,sudo,strace,exec,trace} 'p/1/c/' \
 	'n/apt-get/(update upgrade install remove purge autoremove)/' \
