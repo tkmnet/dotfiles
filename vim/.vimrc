@@ -47,6 +47,10 @@ let g:netrw_altv = 1
 set foldmethod=marker
 
 set clipboard=unnamed
+nmap <silent> <leader>1 "+yy
+vmap <silent> <leader>1 "+y
+nmap <silent> <leader>0 "+p
+
 
 set tags+=tags;
 
