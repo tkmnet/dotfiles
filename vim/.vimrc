@@ -51,8 +51,9 @@ nmap <silent> <leader>1 "+yy
 vmap <silent> <leader>1 "+y
 nmap <silent> <leader>0 "+p
 
-
 set tags+=tags;
+
+imap <Esc> <Esc><Esc>
 
 
 "" NeoBundle
