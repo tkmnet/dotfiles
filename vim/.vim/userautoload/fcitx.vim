@@ -18,3 +18,5 @@ augroup myfcitx
 	autocmd InsertEnter * silent call s:fcitx_insertenter()
 	autocmd InsertLeave * silent call s:fcitx_insertleave()
 augroup END
+
+nmap <Esc> :!fcitx-remote -c
