@@ -19,4 +19,4 @@ augroup myfcitx
 	autocmd InsertLeave * silent call s:fcitx_insertleave()
 augroup END
 
-nmap <silent> <Esc> :let g:my_fcitx_mode = 1<CR>
+nmap <silent> <Esc><Esc> :let g:my_fcitx_mode = 1<CR>
