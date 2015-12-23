@@ -2,7 +2,7 @@ let g:my_fcitx_mode = 1
 
 function! s:fcitx_insertenter()
 	if (g:my_fcitx_mode == 2)
-		system("fcitx-remote -o")
+		call system("fcitx-remote -o")
 	endif
 endfunction
 :command! FcitxInsertEnter :call s:fcitx_insertenter()
