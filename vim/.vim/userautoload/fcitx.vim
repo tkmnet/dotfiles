@@ -10,10 +10,10 @@ endfunction
 function! s:fcitx_insertleave()
 	let g:my_fcitx_mode = system("fcitx-remote")
 	if (g:my_fcitx_mode == 2)
-		system("fcitx-remote -c")
+		call system("fcitx-remote -c")
 	endif
 endfunction
-:command! FcitxInsertLeave :call s:fcitx_insertleave()
+command! FcitxInsertLeave :call s:fcitx_insertleave()
 
 augroup myfcitx
 	autocmd!
