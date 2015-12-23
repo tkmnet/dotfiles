@@ -78,4 +78,4 @@ NeoBundleCheck
 
 
 set runtimepath+=~/.vim/
-runtime! userautoload/*.vim
+runtime! vimrc.d/*.vim

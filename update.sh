@@ -33,7 +33,7 @@ ln -sf $DFDIR/vim/.vimrc ~/.vimrc
 mkdir ~/.vim 2>/dev/null
 mkdir ~/.vim_temp 2>/dev/null
 ln -sf $DFDIR/vim/.vimrc ~/
-ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/userautoload ~/.vim/
+ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/vimrc.d ~/.vim/
 ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/colors ~/.vim/
 ln -sf $LN_DIR_FLAG $DFDIR/vim/.vim/snippets ~/.vim/
 mkdir ~/.vim/bundle 2>/dev/null
