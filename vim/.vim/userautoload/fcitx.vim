@@ -2,14 +2,14 @@ let g:my_fcitx_mode = 1
 
 function! s:fcitx_insertenter()
 	if (g:my_fcitx_mode == 2)
-		!fcitx-remote -o
+		call system("fcitx-remote -o")
 	endif
 endfunction
 
 function! s:fcitx_insertleave()
 	let g:my_fcitx_mode = system("fcitx-remote")
 	if (g:my_fcitx_mode == 2)
-		!fcitx-remote -c
+		call system("fcitx-remote -c")
 	endif
 endfunction
 
@@ -19,4 +19,4 @@ augroup myfcitx
 	autocmd InsertLeave * silent call s:fcitx_insertleave()
 augroup END
 
-nmap <silent> <Esc> :!fcitx-remote -c<CR>
+nmap <Esc> :call system("fcitx-remote -c")<CR>
