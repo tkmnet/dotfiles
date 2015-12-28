@@ -4,5 +4,5 @@
 fcitx/dbus/
 fcitx/log/
 fcitx/clipboard/
-xmonad/
+./xmonad/
 

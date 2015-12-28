@@ -1,0 +1,30 @@
+Config { font = "xft:Ricty-18:regular"
+       , bgColor = "#000000"
+       , fgColor = "#FFFFFF"
+       , position = Top
+       , lowerOnStart = False
+       , commands = [ Run Wireless "wlp3s0" [ "-t"       , "<essid>"
+                                          ] 20
+                    , Run BatteryP        ["BAT0","BAT1"]
+                                          [ "-t"       , "<acstatus>"
+                                          , "-p"       , "3"
+                                          , "-L"       , "20"
+                                          , "-H"       , "80"
+                                          , "--low"    , "#c16666"
+                                          , "--normal" , "#d3d7cf"
+                                          , "--"
+                                                , "-O" , "><left>%|<timeleft>"
+                                                , "-o" , " <left>%|<timeleft>"
+                                                , "-i" , "+<left>%|-:--"
+                                                , "-f" , "AC/online"
+                                          ] 50
+                    , Run Com "/bin/sh" ["-c", "~/.xmonad/celler.sh"] "celler" 50
+                    , Run Com "/bin/sh" ["-c", "~/.xmonad/fcitx.sh"] "fcitx" 10
+                    , Run Com "/bin/sh" ["-c", "~/.xmonad/airplane.sh"] "airplane" 20
+                    , Run Date "%H:%M %y%m%d" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader% }{ %airplane%%celler% W[%wlp3s0wi%] K[%fcitx%] B[%battery%] <fc=#E2231A>%date%</fc> "
+       }

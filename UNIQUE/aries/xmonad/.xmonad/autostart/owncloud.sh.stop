@@ -1,0 +1,3 @@
+killall owncloud
+sleep 3
+owncloud
