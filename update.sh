@@ -58,6 +58,13 @@ ln -sf $LN_DIR_FLAG $DFDIR/fcitx ~/.config/
 #ln -sf $LN_DIR_FLAG $DFDIR/xmonad/.xmonad ~/
 
 
+if [ -x ./UNIQUE/`hostname`/update.sh ]; then
+	cd ./UNIQUE/`hostname`
+	./update.sh
+fi
+cd $DFDIR
+
+
 if [ -e ./.superflag ]; then
 	git add ./
 	git commit -am "Save" >/dev/null
@@ -66,6 +73,5 @@ fi
 
 GIT_VER=`git log -1 | head -1 | tr -d "\n"`
 echo -n $GIT_VER > ./.local-version
-
 
 vim -s vim/install.vim

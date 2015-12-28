@@ -53,7 +53,7 @@ nmap <silent> <leader>0 "+p
 
 set tags+=tags;
 
-imap <Esc> <Esc><Esc>
+imap <Esc> <Esc>
 
 
 "" NeoBundle
