@@ -60,7 +60,7 @@ ln -sf $LN_DIR_FLAG $DFDIR/fcitx ~/.config/
 
 if [ -x ./UNIQUE/`hostname`/update.sh ]; then
 	cd ./UNIQUE/`hostname`
-	./update.sh "`pwd`"
+	./update.sh "`pwd`" "$LN_DIR_FLAG"
 fi
 cd $DFDIR
 
