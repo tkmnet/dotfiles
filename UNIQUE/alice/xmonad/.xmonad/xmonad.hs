@@ -47,7 +47,7 @@ colorGreen     = "#88b986"
 colorGray      = "#676767"
 colorWhite     = "#d3d7cf"
 colorGrayAlt   = "#313131"
-colorNormalbg  = "#1a1e1b"
+colorNormalbg  = "#000000"
 
 myTerminal = "urxvt"
 
@@ -130,6 +130,7 @@ main = do
        , ((modm                    , xK_r ), spawn "xfrun4 -q;xfrun4 -r")
        ]
 
+
 -- Handle Window behaveior
 myLayout = (spacing 5 $ (Grid))
        ||| (spacing 5 $ (ResizableTall 1 (3/100) (3/5) []))
@@ -146,6 +147,7 @@ myStartupHook = do
         spawn "gnome-settings-daemon"
         spawn "gnome-sound-applet"
         spawn "./.xmonad/autostart.sh"
+        spawn "sh -c 'sleep 2;xrandr --noprimary;xrandr --output DVI-I-2 --primary' &"
 
 -- some window must created there
 --myManageHookShift = composeAll
