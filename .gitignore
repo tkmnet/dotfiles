@@ -1,8 +1,9 @@
-.superflag
-.local-version
+/.superflag
+/.local-version
 
-fcitx/dbus/
-fcitx/log/
-fcitx/clipboard/
-./xmonad/
+/fcitx/dbus/
+/fcitx/log/
+/fcitx/clipboard/
+/fcitx/profile*
+/xmonad/
 
