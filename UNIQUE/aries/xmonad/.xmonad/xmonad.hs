@@ -91,8 +91,8 @@ main = do
        , ((modm              , xK_Left  ), prevWS ) -- go to prev workspace
        --, ((modm              , xK_v     ), sendMessage ToggleLayout)
        --, ((modm              , xK_g     ), sendMessage ToggleGaps)
-       , ((modm              , xK_l     ), sendMessage MirrorExpand)
-       , ((modm              , xK_h     ), sendMessage MirrorShrink)
+       , ((modm .|. shiftMask, xK_l     ), sendMessage MirrorExpand)
+       , ((modm .|. shiftMask, xK_h     ), sendMessage MirrorShrink)
        , ((modm .|. shiftMask, xK_Right ), shiftToNext)
        , ((modm .|. shiftMask, xK_Left  ), shiftToPrev)
        --, ((modm              , xK_comma ), sendMessage MagnifyLess)   -- smaller window
@@ -128,6 +128,7 @@ main = do
        , ((modm .|. shiftMask      , xK_F8 ), spawn "gksudo wpa_gui")
        , ((modm                    , xK_Escape ), spawn "systemctl suspend")
        , ((modm                    , xK_r ), spawn "xfrun4 -q;xfrun4 -r")
+       , ((modm                    , xK_l ), spawn "xterm -s sxlock")
        ]
 
 -- Handle Window behaveior
