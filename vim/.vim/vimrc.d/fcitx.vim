@@ -20,5 +20,13 @@ if ("" != system("fcitx-remote"))
 		autocmd InsertLeave * silent call s:fcitx_insertleave()
 	augroup END
 
-"	nmap <silent> <Esc><Esc> :let g:my_fcitx_mode = 1<CR>
+	nmap <silent> <Esc><Esc> :let g:my_fcitx_mode = 1<CR>
+	nmap <silent> <Esc><Esc>OA k
+	nmap <silent> <Esc><Esc>OB j
+	nmap <silent> <Esc><Esc>OC l
+	nmap <silent> <Esc><Esc>OD h
+	imap <silent> <Esc>OA <Up>
+	imap <silent> <Esc>OB <Down>
+	imap <silent> <Esc>OC <Right>
+	imap <silent> <Esc>OD <Left>
 endif
