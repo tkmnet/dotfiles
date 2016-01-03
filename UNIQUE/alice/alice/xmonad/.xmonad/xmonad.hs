@@ -36,15 +36,13 @@ import XMonad.Util.Run
 import Graphics.X11.ExtraTypes.XF86
 
 
-myWorkspaces = ["main", "2", "3", "4", "5", "6", "7", "8"]
+myWorkspaces = ["main", "2", "3", "4", "5"]
 modm = mod4Mask
 
 colorThink     = "#E2231A"
 colorBlue      = "#857da9"
 colorBlue2     = "#1e90ff"
 colorOrange    = "#ff6600"
-colorYellow    = "#ffc700"
-colorRed       = "#ff2a00"
 colorGreen     = "#88b986"
 colorGray      = "#676767"
 colorWhite     = "#d3d7cf"
@@ -93,8 +91,8 @@ main = do
        , ((modm              , xK_Left  ), prevWS ) -- go to prev workspace
        --, ((modm              , xK_v     ), sendMessage ToggleLayout)
        --, ((modm              , xK_g     ), sendMessage ToggleGaps)
-       , ((modm .|. shiftMask, xK_l     ), sendMessage MirrorExpand)
-       , ((modm .|. shiftMask, xK_h     ), sendMessage MirrorShrink)
+       , ((modm              , xK_l     ), sendMessage MirrorExpand)
+       , ((modm              , xK_h     ), sendMessage MirrorShrink)
        , ((modm .|. shiftMask, xK_Right ), shiftToNext)
        , ((modm .|. shiftMask, xK_Left  ), shiftToPrev)
        --, ((modm              , xK_comma ), sendMessage MagnifyLess)   -- smaller window
@@ -130,7 +128,6 @@ main = do
        , ((modm .|. shiftMask      , xK_F8 ), spawn "gksudo wpa_gui")
        , ((modm                    , xK_Escape ), spawn "systemctl suspend")
        , ((modm                    , xK_r ), spawn "xfrun4 -q;xfrun4 -r")
-       , ((modm                    , xK_l ), spawn "dm-tool lock")
        ]
 
 
@@ -177,12 +174,12 @@ myLogHook h = dynamicLogWithPP $ wsPP { ppOutput = hPutStrLn h }
 myWsBar = "xmobar ~/.xmonad/xmobarrc"
 
 wsPP = xmobarPP { ppOrder               = \(ws:l:t:_)   -> [ws,t]
-                , ppCurrent             = xmobarColor   colorOrange      colorNormalbg
-                , ppUrgent              = xmobarColor   colorRed         colorNormalbg
-                , ppVisible             = xmobarColor   colorYellow      colorNormalbg
+                , ppCurrent             = xmobarColor   colorThink       colorNormalbg
+                , ppUrgent              = xmobarColor   colorWhite       colorNormalbg
+                , ppVisible             = xmobarColor   colorWhite       colorNormalbg
                 , ppHidden              = xmobarColor   colorWhite       colorNormalbg
                 , ppHiddenNoWindows     = xmobarColor   colorGray        colorNormalbg
-                , ppTitle               = xmobarColor   colorOrange      colorNormalbg
+                , ppTitle               = xmobarColor   colorThink       colorNormalbg
                 , ppWsSep               = " "
                 , ppSep                 = " :: "
                 }

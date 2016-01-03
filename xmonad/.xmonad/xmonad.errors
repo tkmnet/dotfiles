@@ -2,12 +2,12 @@
 xmonad.hs:8:1: Warning:
     Module ‘System.Cmd’ is deprecated: Use "System.Process" instead
 
-xmonad.hs:65:39: Warning:
+xmonad.hs:67:39: Warning:
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
 
-xmonad.hs:71:14: Warning:
+xmonad.hs:73:14: Warning:
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."

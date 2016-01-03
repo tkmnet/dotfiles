@@ -1,0 +1,13 @@
+Config { font = "xft:Ricty-18:regular"
+       , bgColor = "#000000"
+       , fgColor = "#FFFFFF"
+       , position = Top
+       , lowerOnStart = False
+       , commands = [ Run Com "/bin/sh" ["-c", "~/.xmonad/fcitx.sh"] "fcitx" 10
+                    , Run Date "%H:%M %y%m%d" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader% }{ K[%fcitx%] <fc=#E2231A>%date%</fc> "
+       }
