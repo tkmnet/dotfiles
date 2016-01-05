@@ -37,7 +37,7 @@ import Graphics.X11.ExtraTypes.XF86
 
 tall = ResizableTall 1 (3/100) (1/2) []
 
-myWorkspaces = ["main", "2", "3", "4", "5" , "6", "7"]
+myWorkspaces = ["main", "2", "3", "4", "5" , "6", "7", "8"]
 modm = mod4Mask
 
 colorBlue      = "#857da9"
