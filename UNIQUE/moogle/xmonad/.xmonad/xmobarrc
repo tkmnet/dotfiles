@@ -1,4 +1,4 @@
-Config { font = "xft:ipaexgothic-12:medium"
+Config { font = "xft:Ricty-12:regular"
        , bgColor = "#1a1e1b"
        , fgColor = "#979797"
        , position = Top
