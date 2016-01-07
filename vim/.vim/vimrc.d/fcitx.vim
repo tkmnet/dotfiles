@@ -3,6 +3,6 @@ if ("" != system("fcitx-remote"))
 	imap <silent> <Esc>OB <Esc>:call system("fcitx-remote -c")<CR>lj
 	imap <silent> <Esc>OC <Esc>:call system("fcitx-remote -c")<CR>ll
 	imap <silent> <Esc>OD <Esc>:call system("fcitx-remote -c")<CR>lh
-	
-	nmap <silent> <Nul> :call system("fcitx-remote -o")<CR>i
+
+	nnoremap <silent>  :call system("fcitx-remote -o")<CR>i
 endif
