@@ -2,7 +2,7 @@ NeoBundle "vim-voom/VOoM.git"
 
 let g:voom_tree_width=45
 
-nmap <Lader>m :VoomToggle<CR>
+nmap <silent> <Leader>m :VoomToggle<CR>
 
 augroup auto-voom
 	autocmd!
