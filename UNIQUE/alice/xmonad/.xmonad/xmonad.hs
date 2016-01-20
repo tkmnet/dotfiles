@@ -166,6 +166,7 @@ myManageHookFloat = composeAll
               className =? "Gimp"              --> doFloat,
               className =? "Websearch.py"      --> doFloat,
               className =? "Plugin-container"  --> doFloat,
+              title     =? "gedit"             --> doFloat,
               title     =? "wpa_gui"           --> doFloat,
               title     =? "Application Finder"--> doFloat,
               title     =? "Execute File"      --> doFloat,
