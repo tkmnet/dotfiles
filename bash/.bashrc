@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 
-if [ -x `which zsh||echo /dev/null` ]; then
+if [ -x `which zsh 2>/dev/null||echo /dev/null` ]; then
 	zsh
 	exit
 fi
