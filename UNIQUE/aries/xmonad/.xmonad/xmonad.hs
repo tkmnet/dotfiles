@@ -128,7 +128,7 @@ main = do
        , ((modm .|. shiftMask      , xK_F8 ), spawn "gksudo wpa_gui")
        , ((modm                    , xK_Escape ), spawn "systemctl suspend")
        , ((modm                    , xK_r ), spawn "xfrun4 -q;xfrun4 -r")
-       , ((modm                    , xK_l ), spawn "xterm -e sxlock")
+       , ((modm                    , xK_l ), spawn "lock")
        ]
 
 -- Handle Window behaveior
