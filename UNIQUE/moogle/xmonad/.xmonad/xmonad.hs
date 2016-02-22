@@ -79,7 +79,8 @@ main = do
        , layoutHook = toggleLayouts (noBorders Full) $ avoidStruts $ myLayout
         -- xmobar setting
        , logHook = myLogHook wsbar
-       , handleEventHook = fadeWindowsEventHook
+       , handleEventHook = fadeWindowsEventHook <+>
+                           docksEventHook
        , workspaces = myWorkspaces
        , modMask = modm }
 
