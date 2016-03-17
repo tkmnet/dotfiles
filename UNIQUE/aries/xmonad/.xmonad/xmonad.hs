@@ -49,7 +49,7 @@ colorWhite     = "#d3d7cf"
 colorGrayAlt   = "#313131"
 colorNormalbg  = "#1a1e1b"
 
-myTerminal = "urxvt"
+myTerminal = "xfce4-terminal"
 
 -- Define keys to remove
 keysToRemove x =
@@ -119,8 +119,8 @@ main = do
        , ((modm                    , xK_c      ), kill) -- %! Close the focused window
        , ((modm                    , xK_p  ), spawn "import -window root ~/Pictures/Screenshot/`date +%y%m%d_%H%M%S`.png")
        , ((modm .|. shiftMask      , xK_p  ), spawn "import -frame ~/Pictures/Screenshot/`date +%y%m%d_%H%M%S`.png")
-       , ((modm                    , xK_w ), spawn "firefox")
-       , ((modm                    , xK_s ), spawn "firefox --new-window 'https://www.google.co.jp/'")
+       , ((modm                    , xK_w ), spawn "vivaldi")
+       , ((modm                    , xK_s ), spawn "vivaldi --new-window 'https://www.google.co.jp/'")
        , ((modm                    , xK_f ), spawn "pcmanfm")
        , ((modm                    , xK_o ), spawn "gksudo poweroff")
        , ((modm                    , xK_F5 ), spawn "xbacklight - 10")
