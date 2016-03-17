@@ -6,7 +6,7 @@ if ($?USERNAME) then
 	endif
 endif
 
-set prompt="%{\033[40m%}%{\033[37m%}%T %n@%m %c%#%{\033[0m%} "
+set prompt="%{\033[40m%}%{\033[97m%}%T %n@%m %c%#%{\033[0m%} "
 set autolist=ambiguous
 set complete=1
 set showdots
