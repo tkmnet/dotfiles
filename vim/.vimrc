@@ -33,6 +33,8 @@ set confirm
 set swapfile
 
 set tabstop=2
+set softtabstop=4
+set expandtab
 set shiftwidth=2
 set autoindent
 set smartindent
