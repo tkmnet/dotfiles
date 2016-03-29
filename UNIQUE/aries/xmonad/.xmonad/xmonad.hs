@@ -136,8 +136,8 @@ main = do
 myLayout = (spacing 5 $ (Grid))
        ||| (spacing 5 $ (ResizableTall 1 (3/100) (3/5) []))
        ||| (spacing 5 $ (Mirror $ (ResizableTall 1 (3/100) (3/5) [])))
-       ||| (spacing 5 $ (dragPane Vertical   (1/10) (1/2)))
-       ||| (spacing 5 $ (dragPane Horizontal (1/10) (1/2)))
+--       ||| (spacing 5 $ (dragPane Vertical   (1/10) (1/2)))
+--       ||| (spacing 5 $ (dragPane Horizontal (1/10) (1/2)))
        ||| (spacing 5 $ (Full))
 
 
