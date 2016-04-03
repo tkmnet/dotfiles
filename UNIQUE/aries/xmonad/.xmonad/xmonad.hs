@@ -36,7 +36,7 @@ import XMonad.Util.Run
 import Graphics.X11.ExtraTypes.XF86
 
 
-myWorkspaces = ["main", "2", "3", "4", "5"]
+myWorkspaces = ["1", "2", "3", "4", "5", "6", "7", "8"]
 modm = mod4Mask
 
 colorThink     = "#E2231A"
