@@ -123,7 +123,7 @@ main = do
        --, ((0                       , 0x1008FF02), spawn "xbacklight + 10")
        --, ((0                       , 0x1008FF03), spawn "xbacklight - 10")
 
-       , ((modm                    , xK_w ), spawn "LANG=en_US.UTF-8;vivaldi")
+       , ((modm                    , xK_w ), spawn "LANG=en_US.UTF-8;vivaldi-stable")
        , ((modm                    , xK_s ), spawn "midori --plain 'http://www.google.co.jp/'")
        , ((modm                    , xK_f ), spawn "pcmanfm")
        , ((modm                    , xK_F9 ), spawn "gksudo rbl")
