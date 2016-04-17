@@ -36,7 +36,7 @@ import XMonad.Util.Run
 import Graphics.X11.ExtraTypes.XF86
 
 
-myWorkspaces = ["1", "2", "3", "4", "5", "6", "7", "8"]
+myWorkspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 modm = mod4Mask
 
 colorThink     = "#E2231A"
@@ -104,15 +104,19 @@ main = do
        , ((modm .|. shiftMask, xK_k     ), windows W.swapUp) ]
 
        `additionalKeys`
-       [ ((modm .|. m, k), windows $ f i)
-         | (i, k) <- zip myWorkspaces
-                     [ xK_exclam, xK_at, xK_numbersign
-                     , xK_dollar, xK_percent, xK_asciicircum
-                     , xK_ampersand, xK_asterisk, xK_parenleft
-                     , xK_parenright
-                     ]
-       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
-       ]
+        [ ((m .|. modm, k), windows $ f i)
+         | (i, k) <- zip myWorkspaces ([xK_1 .. xK_9] ++ [xK_0])
+        , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
+        ]
+--       [ ((modm .|. m, k), windows $ f i)
+--         | (i, k) <- zip myWorkspaces
+--                     [ xK_exclam, xK_at, xK_numbersign
+--                     , xK_dollar, xK_percent, xK_asciicircum
+--                     , xK_ampersand, xK_asterisk, xK_parenleft
+--                     , xK_parenright
+--                     ]
+--       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
+--       ]
 
        `additionalKeys`
        [ ((modm                    , xK_Return ), spawn myTerminal)
