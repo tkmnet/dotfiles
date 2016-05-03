@@ -114,6 +114,7 @@ Portuguese (Brazil):br:Portuguese (Brazil, Dvorak):dvorak:pt
 Portuguese (Brazil):br:Portuguese (Brazil, Nativo):nativo:pt
 Portuguese (Brazil):br:Portuguese (Brazil, Nativo for US keyboards):nativo-us:pt
 Portuguese (Brazil):br:Esperanto (Brazil, Nativo):nativo-epo:eo
+Portuguese (Brazil):br:Portuguese (Brazil, IBM/Lenovo ThinkPad):thinkpad:pt
 Portuguese (Brazil):br:Portuguese (Brazil, Sun Type 6/7):sun_type6:pt
 Bulgarian:bg:bg
 Bulgarian:bg:Bulgarian (traditional phonetic):phonetic:bg
@@ -216,6 +217,7 @@ French:fr:French (Bepo, ergonomic, Dvorak way):bepo:fr
 French:fr:French (Bepo, ergonomic, Dvorak way, Latin-9 only):bepo_latin9:fr
 French:fr:French (Dvorak):dvorak:fr
 French:fr:French (Macintosh):mac:fr
+French:fr:French (Azerty):azerty:fr
 French:fr:French (Breton):bre:fr
 French:fr:Occitan:oci:oc
 French:fr:Georgian (France, AZERTY Tskapo):geo:ka
@@ -258,6 +260,7 @@ German:de:German (with Hungarian letters and no dead keys):hu:de
 German:de:Polish (Germany, eliminate dead keys):pl:de
 German:de:German (Sun Type 6/7):sun_type6:de
 German:de:German (Aus der Neo-Welt):adnw:de
+German:de:German (KOY):koy:de
 Greek:gr:el
 Greek:gr:Greek (simple):simple:el
 Greek:gr:Greek (extended):extended:el
@@ -565,6 +568,7 @@ Bambara:ml:French (Mali, alternative):fr-oss:fr
 Bambara:ml:English (Mali, US Macintosh):us-mac:en
 Bambara:ml:English (Mali, US international):us-intl:en
 Swahili (Tanzania):tz:sw
+French (Togo):tg:fr
 Swahili (Kenya):ke:sw
 Swahili (Kenya):ke:Kikuyu:kik:ki
 Tswana:bw:tn
