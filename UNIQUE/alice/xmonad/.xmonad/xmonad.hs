@@ -152,6 +152,7 @@ myStartupHook = do
         spawn "gnome-sound-applet"
         spawn "./.xmonad/autostart.sh"
         spawn "sh -c 'sleep 2;xrandr --noprimary;xrandr --output DVI-I-1 --primary --below DVI-I-2' &"
+        spawn "sh -c 'sleep 1;xrandr --output DVI-I-2' --rotate inverted &"
 
 -- some window must created there
 --myManageHookShift = composeAll
