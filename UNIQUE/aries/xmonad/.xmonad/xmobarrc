@@ -19,12 +19,12 @@ Config { font = "xft:Ricty-18:regular"
                                                 , "-f" , "AC/online"
                                           ] 50
                     , Run Com "/bin/sh" ["-c", "~/.xmonad/celler.sh"] "celler" 50
-                    , Run Com "/bin/sh" ["-c", "~/.xmonad/fcitx.sh"] "fcitx" 10
+                    , Run Com "/bin/sh" ["-c", "~/.xmonad/uim.sh"] "uim" 10
                     , Run Com "/bin/sh" ["-c", "~/.xmonad/airplane.sh"] "airplane" 20
                     , Run Date "%H:%M %y%m%d" "date" 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %StdinReader% }{ %airplane%%celler% W[%wlp3s0wi%] K[%fcitx%] B[%battery%] <fc=#E2231A>%date%</fc> "
+       , template = " %StdinReader% }{ %airplane%%celler% W[%wlp3s0wi%] K[%uim%] B[%battery%] <fc=#E2231A>%date%</fc> "
        }
