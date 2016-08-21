@@ -1,6 +1,6 @@
 #!/bin/sh
 
-case `fcitx-remote` in
+case `uim-remote` in
 	1)
 		echo -n '<fc=#ffffff> E </fc>'
 		;;
