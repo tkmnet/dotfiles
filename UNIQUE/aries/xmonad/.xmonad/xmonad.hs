@@ -105,7 +105,7 @@ main = do
        , ((modm .|. shiftMask, xK_k     ), windows W.swapUp) ]
 
        `additionalKeys`
-       [ ((modm .|.   altMask, xK_d     ), spawn "setenv XMODIFIERS @im=uim ; /usr/lib/mozc/mozc_tool --mode=word_register_dialog")
+       [ ((modm .|.   altMask, xK_d     ), spawn "XMODIFIERS=@im=uim /usr/lib/mozc/mozc_tool --mode=word_register_dialog")
        , ((modm .|.   altMask, xK_r     ), spawn "uim-remote -r") ]
        
        `additionalKeys`
