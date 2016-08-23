@@ -38,6 +38,7 @@ import Graphics.X11.ExtraTypes.XF86
 
 myWorkspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 modm = mod4Mask
+altMask = mod1Mask
 
 colorThink     = "#E2231A"
 colorBlue      = "#857da9"
@@ -105,7 +106,7 @@ main = do
 
        `additionalKeys`
        [ ((modm .|.   altMask, xK_d     ), spawn "/usr/lib/mozc/mozc_tool --mode=word_register_dialog")
-       , ((modm .|. shiftMask, xK_r     ), spawn "uim-remote -r") ]
+       , ((modm .|.   altMask, xK_r     ), spawn "uim-remote -r") ]
        
        `additionalKeys`
         [ ((m .|. modm, k), windows $ f i)
