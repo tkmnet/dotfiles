@@ -7,6 +7,7 @@ import Control.Monad (liftM2)          -- myManageHookShift
 import System.IO                       -- for xmobar
 import System.Cmd
 
+import XMonad.Hooks.EwmhDesktops
 import XMonad.Actions.WindowGo
 import XMonad.Actions.CycleWS
 import XMonad.Hooks.DynamicLog         -- for xmobar
@@ -69,7 +70,7 @@ main :: IO ()
 
 main = do
     wsbar <- spawnPipe myWsBar
-    xmonad $ defaultConfig
+    xmonad $ ewmh defaultConfig
        { borderWidth = 2
        , terminal = myTerminal
        , normalBorderColor = colorGray
