@@ -104,6 +104,10 @@ main = do
        , ((modm .|. shiftMask, xK_k     ), windows W.swapUp) ]
 
        `additionalKeys`
+       [ ((modm .|.   altMask, xK_d     ), spawn "/usr/lib/mozc/mozc_tool --mode=word_register_dialog")
+       , ((modm .|. shiftMask, xK_r     ), spawn "uim-remote -r") ]
+       
+       `additionalKeys`
         [ ((m .|. modm, k), windows $ f i)
          | (i, k) <- zip myWorkspaces ([xK_1 .. xK_9] ++ [xK_0])
         , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
