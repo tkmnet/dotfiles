@@ -9,3 +9,4 @@ ln -sf $1/xmonad/.xmonad/uim.sh ~/.xmonad/
 ln -sf $1/xmonad/.xmonad/airplane.sh ~/.xmonad/
 ln -sf $1/xmonad/.xmonad/celler.sh ~/.xmonad/
 ln -sf $1/xmonad/.xmonad/wlipaddr.sh ~/.xmonad/
+ln -sf $1/xmonad/.xmonad/battery.sh ~/.xmonad/
