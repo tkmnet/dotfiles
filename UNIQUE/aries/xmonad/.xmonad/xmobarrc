@@ -18,6 +18,7 @@ Config { font = "xft:Ricty-18:regular"
                                                 , "-i" , "+<left>%|-:--"
                                                 , "-f" , "AC/online"
                                           ] 50
+                    , Run Com "/bin/sh" ["-c", "~/.xmonad/battery.sh"] "mybattery" 50
                     , Run Com "/bin/sh" ["-c", "~/.xmonad/celler.sh"] "celler" 50
                     , Run Com "/bin/sh" ["-c", "~/.xmonad/uim.sh"] "uim" 10
                     , Run Com "/bin/sh" ["-c", "~/.xmonad/airplane.sh"] "airplane" 20
@@ -26,5 +27,5 @@ Config { font = "xft:Ricty-18:regular"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %StdinReader% }{ %airplane%%celler% W[%wlp3s0wi%] K[%uim%] B[%battery%] <fc=#E2231A>%date%</fc> "
+       , template = " %StdinReader% }{ %airplane%%celler% W[%wlp3s0wi%] K[%uim%] B[%mybattery%] <fc=#E2231A>%date%</fc> "
        }
