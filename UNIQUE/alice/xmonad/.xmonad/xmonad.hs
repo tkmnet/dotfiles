@@ -51,7 +51,7 @@ colorWhite     = "#d3d7cf"
 colorGrayAlt   = "#313131"
 colorNormalbg  = "#000000"
 
-myTerminal = "urxvt"
+myTerminal = "xfce4-terminal"
 
 -- Define keys to remove
 keysToRemove x =
