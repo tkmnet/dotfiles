@@ -41,7 +41,7 @@ main = do
        , normalBorderColor = colorGray
        , focusedBorderColor = colorThink
        , startupHook = myStartupHook
-       , manageHook = placeHook simpleSmart <+> 
+       , manageHook = placeHook fixed (0.5, 0.5) <+> 
                       myManageHookFloat <+>
                       manageDocks
        , layoutHook = toggleLayouts Full $ avoidStruts $ myLayout
