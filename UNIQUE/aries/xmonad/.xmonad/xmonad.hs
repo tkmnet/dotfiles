@@ -45,7 +45,8 @@ main = do
                       myManageHookFloat <+>
                       manageDocks
        , layoutHook = toggleLayouts Full $ avoidStruts $ myLayout
-       , logHook = myLogHook wsbar
+       , logHook = myLogHook wsbar <+>
+                   setWMName "LG3D"
        , handleEventHook = fadeWindowsEventHook <+>
                            docksEventHook <+>
                            handleEventHook defaultConfig <+>
