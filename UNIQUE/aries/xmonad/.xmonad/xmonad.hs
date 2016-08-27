@@ -47,7 +47,9 @@ main = do
        , layoutHook = toggleLayouts Full $ avoidStruts $ myLayout
        , logHook = myLogHook wsbar
        , handleEventHook = fadeWindowsEventHook <+>
-                           docksEventHook
+                           docksEventHook <+>
+                           handleEventHook defaultConfig <+>
+                           fullscreenEventHook
        , workspaces = myWorkspaces
        , modMask = modm }
 
