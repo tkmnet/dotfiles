@@ -1,11 +1,14 @@
 #!/bin/sh
 
-if test `ps aux | grep uim-xim | wc -l` -lt 2; then
+UIM=`/usr/local/bin/uim-remote`
+UIMSTAT=$?
+
+if test $UIMSTAT -ne 0; then
 	echo -n ' - '
 	exit 0
 fi
 
-case "`/usr/local/bin/uim-remote`" in
+case "$UIM" in
 	"1")
 		echo -n '<fc=#ffffff> E </fc>' ;;
 	"2")
