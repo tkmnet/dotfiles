@@ -42,8 +42,7 @@ main = do
        , focusedBorderColor = colorThink
        , startupHook = myStartupHook
        , manageHook = placeHook (fixed (0.5, 0.5)) <+> 
-                      myManageHookFloat <+>
-                      manageDocks
+                      myManageHookFloat
        , layoutHook = toggleLayouts Full $ avoidStruts $ myLayout
        , logHook = myLogHook wsbar <+>
                    setWMName "LG3D"
