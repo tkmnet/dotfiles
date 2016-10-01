@@ -23,8 +23,11 @@ English (US):us:English (US, international AltGr Unicode combining, alternative)
 English (US):us:Atsina:ats:en
 English (US):us:Coeur d'Alene Salish:crd:
 English (US):us:Czech Slovak and German (US):cz_sk_de:en
+English (US):us:English (US, IBM Arabic 238_L):ibm238l:en
 English (US):us:English (US, Sun Type 6/7):sun_type6:en
 English (US):us:English (Norman):norman:en
+English (US):us:English (Carpalx):carpalx:en
+English (US):us:English (Carpalx, full optimization):carpalx-full:en
 Afghani:af:
 Afghani:af:Pashto:ps:ps
 Afghani:af:Uzbek (Afghanistan):uz:uz
@@ -119,6 +122,9 @@ Portuguese (Brazil):br:Portuguese (Brazil, Sun Type 6/7):sun_type6:pt
 Bulgarian:bg:bg
 Bulgarian:bg:Bulgarian (traditional phonetic):phonetic:bg
 Bulgarian:bg:Bulgarian (new phonetic):bas_phonetic:bg
+Berber (Algeria, Latin characters):dz:
+Berber (Algeria, Latin characters):dz:Berber (Algeria, Tifinagh characters):ber:ber
+Berber (Algeria, Latin characters):dz:Arabic (Algeria):ar:ar
 Arabic (Morocco):ma:
 Arabic (Morocco):ma:French (Morocco):french:fr
 Arabic (Morocco):ma:Berber (Morocco, Tifinagh):tifinagh:ber
@@ -261,6 +267,10 @@ German:de:Polish (Germany, eliminate dead keys):pl:de
 German:de:German (Sun Type 6/7):sun_type6:de
 German:de:German (Aus der Neo-Welt):adnw:de
 German:de:German (KOY):koy:de
+German:de:German (Bone):bone:de
+German:de:German (Bone, eszett home row):bone_eszett_home:de
+German:de:German (Neo qwertz):neo_qwertz:de
+German:de:German (Neo qwerty):neo_qwerty:de
 Greek:gr:el
 Greek:gr:Greek (simple):simple:el
 Greek:gr:Greek (extended):extended:el
@@ -584,6 +594,9 @@ Filipino:ph:Filipino (Dvorak Latin):dvorak:fil
 Filipino:ph:Filipino (Dvorak Baybayin):dvorak-bay:fil
 Moldavian:md:ro
 Moldavian:md:Moldavian (Gagauz):gag:
+Indonesian (Jawi):id:id
+Malay (Jawi):my:id
+Malay (Jawi):bn:id
 APL keyboard symbols:apl:en
 APL keyboard symbols:apl:APL keyboard symbols (Dyalog):dyalog:en
 APL keyboard symbols:apl:APL keyboard symbols (sax):sax:en
