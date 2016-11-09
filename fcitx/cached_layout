@@ -27,7 +27,11 @@ English (US):us:English (US, IBM Arabic 238_L):ibm238l:en
 English (US):us:English (US, Sun Type 6/7):sun_type6:en
 English (US):us:English (Norman):norman:en
 English (US):us:English (Carpalx):carpalx:en
+English (US):us:English (Carpalx, international with dead keys):carpalx-intl:en
+English (US):us:English (Carpalx, international AltGr dead keys):carpalx-altgr-intl:en
 English (US):us:English (Carpalx, full optimization):carpalx-full:en
+English (US):us:English (Carpalx, full optimization, international with dead keys):carpalx-full-intl:en
+English (US):us:English (Carpalx, full optimization, international AltGr dead keys):carpalx-full-altgr-intl:en
 Afghani:af:
 Afghani:af:Pashto:ps:ps
 Afghani:af:Uzbek (Afghanistan):uz:uz
@@ -56,6 +60,7 @@ German (Austria):at:de
 German (Austria):at:German (Austria, eliminate dead keys):nodeadkeys:de
 German (Austria):at:German (Austria, Sun dead keys):sundeadkeys:de
 German (Austria):at:German (Austria, Macintosh):mac:de
+English (Australian):au:en
 Azerbaijani:az:az
 Azerbaijani:az:Azerbaijani (Cyrillic):cyrillic:az
 Belarusian:by:be
@@ -70,9 +75,11 @@ Belgian:be:Belgian (eliminate dead keys):nodeadkeys:de
 Belgian:be:Belgian (Sun dead keys):sundeadkeys:de
 Belgian:be:Belgian (Wang model 724 azerty):wang:de
 Belgian:be:Belgian (Sun Type 6/7):sun_type6:de
-Bangla:bd:bn
-Bangla:bd:Bangla (Probhat):probhat:bn
 Indian:in:
+Indian:in:Urdu (phonetic):urd-phonetic:ur
+Indian:in:Urdu (alternative phonetic):urd-phonetic3:ur
+Indian:in:Urdu (WinKeys):urd-winkeys:ur
+Indian:in:English (India, with rupee sign):eng:en
 Indian:in:Bangla (India):ben:bn
 Indian:in:Bangla (India, Probhat):ben_probhat:bn
 Indian:in:Bangla (India, Baishakhi):ben_baishakhi:bn
@@ -97,15 +104,11 @@ Indian:in:Tamil (TSCII typewriter):tam_TSCII:ta
 Indian:in:Tamil:tam:ta
 Indian:in:Telugu:tel:te
 Indian:in:Telugu (KaGaPa phonetic):tel-kagapa:te
-Indian:in:Urdu (phonetic):urd-phonetic:ur
-Indian:in:Urdu (alternative phonetic):urd-phonetic3:ur
-Indian:in:Urdu (WinKeys):urd-winkeys:ur
 Indian:in:Hindi (Bolnagri):bolnagri:hi
 Indian:in:Hindi (Wx):hin-wx:hi
 Indian:in:Hindi (KaGaPa phonetic):hin-kagapa:hi
 Indian:in:Sanskrit (KaGaPa phonetic):san-kagapa:sa
 Indian:in:Marathi (KaGaPa phonetic):mar-kagapa:mr
-Indian:in:English (India, with rupee sign):eng:en
 Bosnian:ba:bs
 Bosnian:ba:Bosnian (with guillemets for quotes):alternatequotes:bs
 Bosnian:ba:Bosnian (with Bosnian digraphs):unicode:bs
@@ -138,6 +141,7 @@ English (Cameroon):cm:French (Cameroon):french:fr
 English (Cameroon):cm:Cameroon Multilingual (qwerty):qwerty:en
 English (Cameroon):cm:Cameroon Multilingual (azerty):azerty:fr
 English (Cameroon):cm:Cameroon Multilingual (Dvorak):dvorak:en
+English (Cameroon):cm:Mmuock:mmuock:en
 English (Cameroon):cm:Mmuock:mmuock:en
 Burmese:mm:my
 French (Canada):ca:fr
@@ -260,7 +264,7 @@ German:de:Lower Sorbian (qwertz):dsb_qwertz:dsb
 German:de:German (qwerty):qwerty:de
 German:de:Turkish (Germany):tr:
 German:de:Russian (Germany, phonetic):ru:ru
-German:de:German (legacy):legacy:de
+German:de:German (dead tilde):deadtilde:de
 German:de:German (US keyboard with German letters):us:en
 German:de:German (with Hungarian letters and no dead keys):hu:de
 German:de:Polish (Germany, eliminate dead keys):pl:de
@@ -331,6 +335,7 @@ Khmer (Cambodia):kh:km
 Kazakh:kz:kk
 Kazakh:kz:Russian (Kazakhstan, with Kazakh):ruskaz:kk
 Kazakh:kz:Kazakh (with Russian):kazrus:kk
+Kazakh:kz:Kazakh (extended):ext:kk
 Lao:la:lo
 Lao:la:Lao (STEA proposed standard layout):stea:lo
 Spanish (Latin American):latam:es
@@ -438,6 +443,7 @@ Russian:ru:Serbian (Russia):srp:ru
 Russian:ru:Bashkirian:bak:ba
 Russian:ru:Mari:chm:chm
 Russian:ru:Russian (phonetic azerty):phonetic_azerty:ru
+Russian:ru:Russian (phonetic dvorak):phonetic_dvorak:ru
 Russian:ru:Russian (phonetic French):phonetic_fr:ru
 Russian:ru:Church Slavonic:chu:cu
 Russian:ru:Russian (with Ukrainian-Belorussian layout):ruu:ru
@@ -605,3 +611,5 @@ APL keyboard symbols:apl:APL keyboard symbols (IBM APL2):apl2:en
 APL keyboard symbols:apl:APL keyboard symbols (Manugistics APL*PLUS II):aplplusII:en
 APL keyboard symbols:apl:APL keyboard symbols (APLX unified):aplx:en
 EurKEY (US based layout with european letters):eu:ca
+Bangla:bd:bn
+Bangla:bd:Bangla (Probhat):probhat:bn
