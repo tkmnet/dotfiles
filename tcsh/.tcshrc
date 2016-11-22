@@ -70,4 +70,5 @@ complete {which,where,sudo,strace,exec,trace} 'p/1/c/' \
 complete build 'p/1/`build -l|sed -e "s%\n% %"`/'
 
 
-#sh -c 'echo Hello! Shunki 1>&2'
+source ~/.ssh/agent.$HOST.tmp >& /dev/null
+
