@@ -1,7 +1,7 @@
-if( `ps aux | grep -e "^$USER" | grep '\-tcsh' | wc -l` <= 2  ) then
-	ssh-agent -k
-	rm -f ~/.ssh/agent.$HOST.tmp >& /dev/null
-endif
+#if( `ps aux | grep -e "^$USER" | grep '\-tcsh' | wc -l` <= 2  ) then
+#	ssh-agent -k
+#	rm -f ~/.ssh/agent.$HOST.tmp >& /dev/null
+#endif
 
 if( -d ~/tmp ) then
 	cd ~/tmp
