@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Autostart Script
+Comment=
+Exec=sh -c '~/.config/autostart/resource/autostart.sh'
+
