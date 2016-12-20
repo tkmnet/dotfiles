@@ -198,40 +198,80 @@
     </keybind>
     <keybind key="W-semicolon">
       <action name="MoveRelative">
-        <x>-10</x>
+        <x>-100</x>
       </action>
     </keybind>
     <keybind key="W-apostrophe">
       <action name="MoveRelative">
-        <x>10</x>
+        <x>100</x>
       </action>
     </keybind>
     <keybind key="W-bracketleft">
       <action name="MoveRelative">
-        <y>-10</y>
+        <y>-100</y>
       </action>
     </keybind>
     <keybind key="W-slash">
       <action name="MoveRelative">
-        <y>10</y>
+        <y>100</y>
       </action>
     </keybind>
     <keybind key="S-W-colon">
       <action name="ResizeRelative">
-        <right>-10</right>
+        <right>-100</right>
       </action>
     </keybind>
     <keybind key="S-W-quotedbl">
       <action name="ResizeRelative">
-        <right>10</right>
+        <right>100</right>
       </action>
     </keybind>
     <keybind key="S-W-braceleft">
       <action name="ResizeRelative">
-        <bottom>-10</bottom>
+        <bottom>-100</bottom>
       </action>
     </keybind>
     <keybind key="S-W-question">
+      <action name="ResizeRelative">
+        <bottom>100</bottom>
+      </action>
+    </keybind>
+    <keybind key="C-W-semicolon">
+      <action name="MoveRelative">
+        <x>-10</x>
+      </action>
+    </keybind>
+    <keybind key="C-W-apostrophe">
+      <action name="MoveRelative">
+        <x>10</x>
+      </action>
+    </keybind>
+    <keybind key="C-W-bracketleft">
+      <action name="MoveRelative">
+        <y>-10</y>
+      </action>
+    </keybind>
+    <keybind key="C-W-slash">
+      <action name="MoveRelative">
+        <y>10</y>
+      </action>
+    </keybind>
+    <keybind key="C-S-W-colon">
+      <action name="ResizeRelative">
+        <right>-10</right>
+      </action>
+    </keybind>
+    <keybind key="C-S-W-quotedbl">
+      <action name="ResizeRelative">
+        <right>10</right>
+      </action>
+    </keybind>
+    <keybind key="C-S-W-braceleft">
+      <action name="ResizeRelative">
+        <bottom>-10</bottom>
+      </action>
+    </keybind>
+    <keybind key="C-S-W-question">
       <action name="ResizeRelative">
         <bottom>10</bottom>
       </action>
