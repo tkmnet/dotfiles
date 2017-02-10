@@ -9,10 +9,10 @@
        apply -->
     <followMouse>no</followMouse>
     <!-- move focus to a window when you move the mouse into it -->
-    <focusLast>yes</focusLast>
+    <focusLast>no</focusLast>
     <!-- focus the last used window when changing desktops, instead of the one
        under the mouse pointer. when followMouse is enabled -->
-    <underMouse>no</underMouse>
+    <underMouse>yes</underMouse>
     <!-- move focus under the mouse, even when the mouse is not moving -->
     <focusDelay>200</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
@@ -31,6 +31,7 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
+    <primaryMonitor/>
   </placement>
   <theme>
     <name>Numix</name>
@@ -114,7 +115,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
@@ -327,6 +328,7 @@
         <command>xfce4-terminal</command>
       </action>
       <action name="Focus"/>
+      <action name="Raise"/>
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
@@ -338,6 +340,16 @@
         <command>firefox</command>
       </action>
       <action name="Focus"/>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>sh /home/takamin/bin/lock</command>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>/usr/bin/xpad -t</command>
+      </action>
     </keybind>
   </keyboard>
   <mouse>
