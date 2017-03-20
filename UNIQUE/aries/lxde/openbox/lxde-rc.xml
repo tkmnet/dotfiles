@@ -337,9 +337,8 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>chromnium</command>
+        <command>chromium</command>
       </action>
-      <action name="Focus"/>
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
